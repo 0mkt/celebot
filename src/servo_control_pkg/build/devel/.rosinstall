@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/michal/catkin_ws/src/servo_control_pkg/build/devel/setup.sh

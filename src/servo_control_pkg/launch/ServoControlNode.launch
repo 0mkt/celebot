@@ -1,0 +1,5 @@
+<launch>
+    <!-- My Package launch file -->
+    <node pkg="servo_control_pkg" type="ServoControlNode" name="servo_control_node"  output="screen">
+    </node>
+</launch>

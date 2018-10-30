@@ -1,0 +1,2 @@
+custom_msg_pkg:servo_control_pkg
+-DCATKIN_DEVEL_PREFIX=/home/michal/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/michal/catkin_ws/install -G Unix Makefiles

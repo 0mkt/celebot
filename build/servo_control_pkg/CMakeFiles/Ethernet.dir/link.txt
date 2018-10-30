@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -g  -shared -Wl,-soname,libEthernet.so -o /home/michal/catkin_ws/devel/lib/libEthernet.so CMakeFiles/Ethernet.dir/src/Ethernet.c.o 

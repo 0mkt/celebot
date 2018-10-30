@@ -1,0 +1,5 @@
+int32 targetState      
+int32 callerId   
+---
+int32 result          # return code indicating result [1, 2, 3, 4, 5 - state changed to...] [-1 - command rejected]
+string errorDesc

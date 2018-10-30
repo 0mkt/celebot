@@ -1,0 +1,20 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "",
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "includePath": [
+                "/home/michal/catkin_ws/devel/include",
+                "/opt/ros/melodic/include",
+                "/home/michal/catkin_ws/src/servo_control_pkg/include",
+                "/home/michal/catkin_ws/src/custom_msg_pkg/include",
+                "/usr/include"
+            ],
+            "name": "Linux",
+            "intelliSenseMode": "gcc-x64"
+        }
+    ],
+    "version": 4
+}

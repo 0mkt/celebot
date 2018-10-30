@@ -1,0 +1,16 @@
+nodes_config:
+  main_node:
+    id: 1
+  
+  safety_node:
+    id: 2
+    
+  servo_control_node:
+    id: 3
+    states:
+      initialization: 0
+      standby: 1
+      motion: 2
+      shutdown: 3
+      alarm: 4
+      emergency: 5

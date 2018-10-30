@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -g  -shared -Wl,-soname,libMiniPID.so -o /home/michal/catkin_ws/devel/lib/libMiniPID.so CMakeFiles/MiniPID.dir/src/MiniPID.cpp.o 
