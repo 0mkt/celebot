@@ -324,19 +324,6 @@ custom_msg_pkg_generate_messages_lisp/fast:
 .PHONY : custom_msg_pkg_generate_messages_lisp/fast
 
 #=============================================================================
-# Target rules for targets named _custom_msg_pkg_generate_messages_check_deps_SCNChangeStateServiceMsg
-
-# Build rule for target.
-_custom_msg_pkg_generate_messages_check_deps_SCNChangeStateServiceMsg: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _custom_msg_pkg_generate_messages_check_deps_SCNChangeStateServiceMsg
-.PHONY : _custom_msg_pkg_generate_messages_check_deps_SCNChangeStateServiceMsg
-
-# fast build rule for target.
-_custom_msg_pkg_generate_messages_check_deps_SCNChangeStateServiceMsg/fast:
-	$(MAKE) -f custom_msg_pkg/CMakeFiles/_custom_msg_pkg_generate_messages_check_deps_SCNChangeStateServiceMsg.dir/build.make custom_msg_pkg/CMakeFiles/_custom_msg_pkg_generate_messages_check_deps_SCNChangeStateServiceMsg.dir/build
-.PHONY : _custom_msg_pkg_generate_messages_check_deps_SCNChangeStateServiceMsg/fast
-
-#=============================================================================
 # Target rules for targets named custom_msg_pkg_gencpp
 
 # Build rule for target.
@@ -413,6 +400,19 @@ rosgraph_msgs_generate_messages_cpp: cmake_check_build_system
 rosgraph_msgs_generate_messages_cpp/fast:
 	$(MAKE) -f custom_msg_pkg/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make custom_msg_pkg/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named _custom_msg_pkg_generate_messages_check_deps_ChangeNodeStateServiceMsg
+
+# Build rule for target.
+_custom_msg_pkg_generate_messages_check_deps_ChangeNodeStateServiceMsg: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _custom_msg_pkg_generate_messages_check_deps_ChangeNodeStateServiceMsg
+.PHONY : _custom_msg_pkg_generate_messages_check_deps_ChangeNodeStateServiceMsg
+
+# fast build rule for target.
+_custom_msg_pkg_generate_messages_check_deps_ChangeNodeStateServiceMsg/fast:
+	$(MAKE) -f custom_msg_pkg/CMakeFiles/_custom_msg_pkg_generate_messages_check_deps_ChangeNodeStateServiceMsg.dir/build.make custom_msg_pkg/CMakeFiles/_custom_msg_pkg_generate_messages_check_deps_ChangeNodeStateServiceMsg.dir/build
+.PHONY : _custom_msg_pkg_generate_messages_check_deps_ChangeNodeStateServiceMsg/fast
 
 #=============================================================================
 # Target rules for targets named std_msgs_generate_messages_lisp
@@ -636,6 +636,32 @@ std_msgs_generate_messages_py/fast:
 .PHONY : std_msgs_generate_messages_py/fast
 
 #=============================================================================
+# Target rules for targets named SafetyNode
+
+# Build rule for target.
+SafetyNode: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 SafetyNode
+.PHONY : SafetyNode
+
+# fast build rule for target.
+SafetyNode/fast:
+	$(MAKE) -f safety_node_pkg/CMakeFiles/SafetyNode.dir/build.make safety_node_pkg/CMakeFiles/SafetyNode.dir/build
+.PHONY : SafetyNode/fast
+
+#=============================================================================
+# Target rules for targets named SafetySysMethods
+
+# Build rule for target.
+SafetySysMethods: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 SafetySysMethods
+.PHONY : SafetySysMethods
+
+# fast build rule for target.
+SafetySysMethods/fast:
+	$(MAKE) -f safety_node_pkg/CMakeFiles/SafetySysMethods.dir/build.make safety_node_pkg/CMakeFiles/SafetySysMethods.dir/build
+.PHONY : SafetySysMethods/fast
+
+#=============================================================================
 # Target rules for targets named EthernetInterface
 
 # Build rule for target.
@@ -738,13 +764,13 @@ help:
 	@echo "... custom_msg_pkg_genpy"
 	@echo "... custom_msg_pkg_generate_messages_nodejs"
 	@echo "... custom_msg_pkg_generate_messages_lisp"
-	@echo "... _custom_msg_pkg_generate_messages_check_deps_SCNChangeStateServiceMsg"
 	@echo "... custom_msg_pkg_gencpp"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... custom_msg_pkg_gennodejs"
 	@echo "... custom_msg_pkg_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
+	@echo "... _custom_msg_pkg_generate_messages_check_deps_ChangeNodeStateServiceMsg"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... custom_msg_pkg_generate_messages_eus"
 	@echo "... roscpp_generate_messages_cpp"
@@ -762,6 +788,8 @@ help:
 	@echo "... custom_msg_pkg_genlisp"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_py"
+	@echo "... SafetyNode"
+	@echo "... SafetySysMethods"
 	@echo "... EthernetInterface"
 	@echo "... ServoGroupMethods"
 	@echo "... Ethernet"

@@ -1,9 +1,17 @@
 nodes_config:
+  
   main_node:
     id: 1
   
   safety_node:
     id: 2
+    states:
+      initialization: 0
+      disarmed: 1
+      armed: 2
+      shutdown: 3
+      breach: 4
+      failure: 5
     
   servo_control_node:
     id: 3
@@ -14,3 +22,4 @@ nodes_config:
       shutdown: 3
       alarm: 4
       emergency: 5
+      failure: 6

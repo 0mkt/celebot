@@ -53,16 +53,16 @@ CMAKE_BINARY_DIR = /home/michal/catkin_ws/build
 # Include the progress variables for this target.
 include custom_msg_pkg/CMakeFiles/custom_msg_pkg_generate_messages_lisp.dir/progress.make
 
-custom_msg_pkg/CMakeFiles/custom_msg_pkg_generate_messages_lisp: /home/michal/catkin_ws/devel/share/common-lisp/ros/custom_msg_pkg/srv/SCNChangeStateServiceMsg.lisp
+custom_msg_pkg/CMakeFiles/custom_msg_pkg_generate_messages_lisp: /home/michal/catkin_ws/devel/share/common-lisp/ros/custom_msg_pkg/srv/ChangeNodeStateServiceMsg.lisp
 
 
-/home/michal/catkin_ws/devel/share/common-lisp/ros/custom_msg_pkg/srv/SCNChangeStateServiceMsg.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
-/home/michal/catkin_ws/devel/share/common-lisp/ros/custom_msg_pkg/srv/SCNChangeStateServiceMsg.lisp: /home/michal/catkin_ws/src/custom_msg_pkg/srv/SCNChangeStateServiceMsg.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/michal/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Lisp code from custom_msg_pkg/SCNChangeStateServiceMsg.srv"
-	cd /home/michal/catkin_ws/build/custom_msg_pkg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/michal/catkin_ws/src/custom_msg_pkg/srv/SCNChangeStateServiceMsg.srv -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p custom_msg_pkg -o /home/michal/catkin_ws/devel/share/common-lisp/ros/custom_msg_pkg/srv
+/home/michal/catkin_ws/devel/share/common-lisp/ros/custom_msg_pkg/srv/ChangeNodeStateServiceMsg.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
+/home/michal/catkin_ws/devel/share/common-lisp/ros/custom_msg_pkg/srv/ChangeNodeStateServiceMsg.lisp: /home/michal/catkin_ws/src/custom_msg_pkg/srv/ChangeNodeStateServiceMsg.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/michal/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Lisp code from custom_msg_pkg/ChangeNodeStateServiceMsg.srv"
+	cd /home/michal/catkin_ws/build/custom_msg_pkg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/michal/catkin_ws/src/custom_msg_pkg/srv/ChangeNodeStateServiceMsg.srv -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p custom_msg_pkg -o /home/michal/catkin_ws/devel/share/common-lisp/ros/custom_msg_pkg/srv
 
 custom_msg_pkg_generate_messages_lisp: custom_msg_pkg/CMakeFiles/custom_msg_pkg_generate_messages_lisp
-custom_msg_pkg_generate_messages_lisp: /home/michal/catkin_ws/devel/share/common-lisp/ros/custom_msg_pkg/srv/SCNChangeStateServiceMsg.lisp
+custom_msg_pkg_generate_messages_lisp: /home/michal/catkin_ws/devel/share/common-lisp/ros/custom_msg_pkg/srv/ChangeNodeStateServiceMsg.lisp
 custom_msg_pkg_generate_messages_lisp: custom_msg_pkg/CMakeFiles/custom_msg_pkg_generate_messages_lisp.dir/build.make
 
 .PHONY : custom_msg_pkg_generate_messages_lisp

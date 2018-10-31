@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/michal/catkin_ws/devel/include/custom_msg_pkg/SCNChangeStateServiceMsg.h
+/home/michal/catkin_ws/devel/include/custom_msg_pkg/ChangeNodeStateServiceMsg.h
 ros/service_traits.h
 -
-custom_msg_pkg/SCNChangeStateServiceMsgRequest.h
+custom_msg_pkg/ChangeNodeStateServiceMsgRequest.h
 -
-custom_msg_pkg/SCNChangeStateServiceMsgResponse.h
+custom_msg_pkg/ChangeNodeStateServiceMsgResponse.h
 -
 
-/home/michal/catkin_ws/devel/include/custom_msg_pkg/SCNChangeStateServiceMsgRequest.h
+/home/michal/catkin_ws/devel/include/custom_msg_pkg/ChangeNodeStateServiceMsgRequest.h
 string
 -
 vector
@@ -30,7 +30,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/michal/catkin_ws/devel/include/custom_msg_pkg/SCNChangeStateServiceMsgResponse.h
+/home/michal/catkin_ws/devel/include/custom_msg_pkg/ChangeNodeStateServiceMsgResponse.h
 string
 -
 vector
@@ -137,8 +137,8 @@ ros/ros.h
 -
 std_msgs/Int32.h
 /home/michal/catkin_ws/src/servo_control_pkg/include/std_msgs/Int32.h
-custom_msg_pkg/SCNChangeStateServiceMsg.h
-/home/michal/catkin_ws/src/servo_control_pkg/include/custom_msg_pkg/SCNChangeStateServiceMsg.h
+custom_msg_pkg/ChangeNodeStateServiceMsg.h
+/home/michal/catkin_ws/src/servo_control_pkg/include/custom_msg_pkg/ChangeNodeStateServiceMsg.h
 ServoGroupMethods.h
 /home/michal/catkin_ws/src/servo_control_pkg/include/ServoGroupMethods.h
 

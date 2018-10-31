@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/custom_msg_pkg_generate_messages_eus"
-  "/home/michal/catkin_ws/devel/share/roseus/ros/custom_msg_pkg/srv/SCNChangeStateServiceMsg.l"
+  "/home/michal/catkin_ws/devel/share/roseus/ros/custom_msg_pkg/srv/ChangeNodeStateServiceMsg.l"
   "/home/michal/catkin_ws/devel/share/roseus/ros/custom_msg_pkg/manifest.l"
 )
 

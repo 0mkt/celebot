@@ -213,21 +213,6 @@ custom_msg_pkg_generate_messages_lisp/fast:
 .PHONY : custom_msg_pkg_generate_messages_lisp/fast
 
 # Convenience name for target.
-custom_msg_pkg/CMakeFiles/_custom_msg_pkg_generate_messages_check_deps_SCNChangeStateServiceMsg.dir/rule:
-	cd /home/michal/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 custom_msg_pkg/CMakeFiles/_custom_msg_pkg_generate_messages_check_deps_SCNChangeStateServiceMsg.dir/rule
-.PHONY : custom_msg_pkg/CMakeFiles/_custom_msg_pkg_generate_messages_check_deps_SCNChangeStateServiceMsg.dir/rule
-
-# Convenience name for target.
-_custom_msg_pkg_generate_messages_check_deps_SCNChangeStateServiceMsg: custom_msg_pkg/CMakeFiles/_custom_msg_pkg_generate_messages_check_deps_SCNChangeStateServiceMsg.dir/rule
-
-.PHONY : _custom_msg_pkg_generate_messages_check_deps_SCNChangeStateServiceMsg
-
-# fast build rule for target.
-_custom_msg_pkg_generate_messages_check_deps_SCNChangeStateServiceMsg/fast:
-	cd /home/michal/catkin_ws/build && $(MAKE) -f custom_msg_pkg/CMakeFiles/_custom_msg_pkg_generate_messages_check_deps_SCNChangeStateServiceMsg.dir/build.make custom_msg_pkg/CMakeFiles/_custom_msg_pkg_generate_messages_check_deps_SCNChangeStateServiceMsg.dir/build
-.PHONY : _custom_msg_pkg_generate_messages_check_deps_SCNChangeStateServiceMsg/fast
-
-# Convenience name for target.
 custom_msg_pkg/CMakeFiles/custom_msg_pkg_gencpp.dir/rule:
 	cd /home/michal/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 custom_msg_pkg/CMakeFiles/custom_msg_pkg_gencpp.dir/rule
 .PHONY : custom_msg_pkg/CMakeFiles/custom_msg_pkg_gencpp.dir/rule
@@ -316,6 +301,21 @@ rosgraph_msgs_generate_messages_cpp: custom_msg_pkg/CMakeFiles/rosgraph_msgs_gen
 rosgraph_msgs_generate_messages_cpp/fast:
 	cd /home/michal/catkin_ws/build && $(MAKE) -f custom_msg_pkg/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make custom_msg_pkg/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+custom_msg_pkg/CMakeFiles/_custom_msg_pkg_generate_messages_check_deps_ChangeNodeStateServiceMsg.dir/rule:
+	cd /home/michal/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 custom_msg_pkg/CMakeFiles/_custom_msg_pkg_generate_messages_check_deps_ChangeNodeStateServiceMsg.dir/rule
+.PHONY : custom_msg_pkg/CMakeFiles/_custom_msg_pkg_generate_messages_check_deps_ChangeNodeStateServiceMsg.dir/rule
+
+# Convenience name for target.
+_custom_msg_pkg_generate_messages_check_deps_ChangeNodeStateServiceMsg: custom_msg_pkg/CMakeFiles/_custom_msg_pkg_generate_messages_check_deps_ChangeNodeStateServiceMsg.dir/rule
+
+.PHONY : _custom_msg_pkg_generate_messages_check_deps_ChangeNodeStateServiceMsg
+
+# fast build rule for target.
+_custom_msg_pkg_generate_messages_check_deps_ChangeNodeStateServiceMsg/fast:
+	cd /home/michal/catkin_ws/build && $(MAKE) -f custom_msg_pkg/CMakeFiles/_custom_msg_pkg_generate_messages_check_deps_ChangeNodeStateServiceMsg.dir/build.make custom_msg_pkg/CMakeFiles/_custom_msg_pkg_generate_messages_check_deps_ChangeNodeStateServiceMsg.dir/build
+.PHONY : _custom_msg_pkg_generate_messages_check_deps_ChangeNodeStateServiceMsg/fast
 
 # Convenience name for target.
 custom_msg_pkg/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
@@ -585,7 +585,6 @@ help:
 	@echo "... custom_msg_pkg_genpy"
 	@echo "... custom_msg_pkg_generate_messages_nodejs"
 	@echo "... custom_msg_pkg_generate_messages_lisp"
-	@echo "... _custom_msg_pkg_generate_messages_check_deps_SCNChangeStateServiceMsg"
 	@echo "... list_install_components"
 	@echo "... custom_msg_pkg_gencpp"
 	@echo "... roscpp_generate_messages_py"
@@ -594,6 +593,7 @@ help:
 	@echo "... custom_msg_pkg_gennodejs"
 	@echo "... custom_msg_pkg_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
+	@echo "... _custom_msg_pkg_generate_messages_check_deps_ChangeNodeStateServiceMsg"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... custom_msg_pkg_generate_messages_eus"
 	@echo "... roscpp_generate_messages_cpp"

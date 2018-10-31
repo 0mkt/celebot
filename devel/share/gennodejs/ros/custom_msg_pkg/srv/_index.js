@@ -1,8 +1,8 @@
 
 "use strict";
 
-let SCNChangeStateServiceMsg = require('./SCNChangeStateServiceMsg.js')
+let ChangeNodeStateServiceMsg = require('./ChangeNodeStateServiceMsg.js')
 
 module.exports = {
-  SCNChangeStateServiceMsg: SCNChangeStateServiceMsg,
+  ChangeNodeStateServiceMsg: ChangeNodeStateServiceMsg,
 };

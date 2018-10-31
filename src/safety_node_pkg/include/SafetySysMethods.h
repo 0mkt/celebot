@@ -1,0 +1,2 @@
+bool SafetySystemConnected();
+bool SafetySystemOkSignalActive();

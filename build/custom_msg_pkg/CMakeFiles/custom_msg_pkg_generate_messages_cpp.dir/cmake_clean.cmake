@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/custom_msg_pkg_generate_messages_cpp"
-  "/home/michal/catkin_ws/devel/include/custom_msg_pkg/SCNChangeStateServiceMsg.h"
+  "/home/michal/catkin_ws/devel/include/custom_msg_pkg/ChangeNodeStateServiceMsg.h"
 )
 
 # Per-language clean rules from dependency scanning.

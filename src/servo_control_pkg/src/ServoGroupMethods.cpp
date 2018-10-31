@@ -124,3 +124,18 @@ bool AnyServoInAlarmState(vector<Servo> &servos){
         
     return result;
 }
+
+bool AnyServoInEmergencyState(vector<Servo> &servos){
+
+    bool result = false;
+
+    for (int i = 0; i < servos.size(); i++){
+        if (servos[i].status.emergency){
+
+            ROS_ERROR_STREAM(servos[i].ipAddress << " is in emergency state!");
+            result = true;
+        } 
+    }
+        
+    return result;
+}

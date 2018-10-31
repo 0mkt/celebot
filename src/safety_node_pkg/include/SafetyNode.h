@@ -1,7 +1,8 @@
 #pragma once
 #include <ros/ros.h>
 #include "std_msgs/Int32.h"
-#include "custom_msg_pkg/SCNChangeStateServiceMsg.h"
+#include "custom_msg_pkg/ChangeNodeStateServiceMsg.h"
+#include "SafetySysMethods.h"
 
 using namespace std;
 
@@ -24,4 +25,10 @@ enum PROGRAM_STATES {
     SHUTDOWN = 3,
     BREACH = 4,
     FAILURE = 5
+};
+
+enum SAFETYSYS_CONDITION {
+	ALL_GOOD = 0,
+	SAFETY_BREACH = 1,
+	COMM_FAILURE = 2
 };

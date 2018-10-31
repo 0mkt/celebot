@@ -5,9 +5,15 @@
 //------------------------------------------------------------------------------
 bool ReadNodesConfig(ros::NodeHandle nh){
 
+    // self
     if (!nh.getParam("/nodes_config/servo_control_node/id", nodeId)) return false;
+
+    // main
     if (!nh.getParam("/nodes_config/main_node/id", mainNodeId)) return false;
+
+    // safety
     if (!nh.getParam("/nodes_config/safety_node/id", safetyNodeId)) return false;
+    if (!nh.getParam("/nodes_config/safety_node/states/armed", safetyNodeArmedState)) return false;
 
     return true;
 } 
@@ -15,49 +21,49 @@ bool ReadNodesConfig(ros::NodeHandle nh){
 //------------------------------------------------------------------------------
 //				       --> ROS CALLBACKS <--
 //------------------------------------------------------------------------------
-bool ChangeStateServiceCallback(custom_msg_pkg::SCNChangeStateServiceMsg::Request &req,
-                 custom_msg_pkg::SCNChangeStateServiceMsg::Response &res)
+//------------------------------------------------------------------------------
+//			CHANGE NODE STATE SERVICE PUBLISHER CALLBACK
+//------------------------------------------------------------------------------
+bool ChangeNodeStateServicePublisherCallback(custom_msg_pkg::ChangeNodeStateServiceMsg::Request &req,
+                 custom_msg_pkg::ChangeNodeStateServiceMsg::Response &res)
 {  
-  ROS_INFO("ChangeStateServiceCallback has been called"); 
-  ROS_INFO("Request Data==> targetState=%d, callerId=%d", req.targetState, req.callerId);
+    ROS_INFO("ChangeNodeStateServiceCallback has been called"); 
+    ROS_INFO("Request Data==> targetState=%d, callerId=%d", req.targetState, req.callerId);
 
-  bool reqValid = ValidateChangeStateRequest(req.targetState, req.callerId);
-  
-  if (reqValid) {
-      ROS_INFO("Request accepted!");
+    bool reqValid = ValidateChangeStateRequest(req.targetState, req.callerId);
+    
+    if (reqValid) {
+        ROS_INFO("Request accepted!");
 
-      ChangeProgramStateTo(req.targetState);
-      res.result = _programState;
-      res.errorDesc = "All good";
-      
-  } else {
-      ROS_WARN("Request is invalid. Rejecting request!");
+        ChangeProgramStateTo(req.targetState);
+        res.result = _programState;
+        res.errorDesc = "All good";
+        
+    } else {
+        ROS_WARN("Request is invalid. Rejecting request!");
 
-      res.result = -1; 
-      res.errorDesc = "Request was rejected.";
-  } 
+        res.result = -1; 
+        res.errorDesc = "Request was rejected.";
+    } 
 
-  return true;
+    return true;
 }
 
 bool ValidateChangeStateRequest(int targetState, int callerId){
 
-    //change state from STANDBY to MOTION or to SHUTDOWN [accept req only from main node]
-    if (_programState == STANDBY && (targetState == MOTION || targetState == SHUTDOWN)){
-        return callerId == mainNodeId;
-    }
+    if (callerId != mainNodeId) return false;
+    if (_programState == EMERGENCY && targetState != STANDBY) return false;
+    if (_programState == FAILURE && targetState != INITIALIZATION) return false;
 
-    //change state from MOTION to STANDBY or to SHUTDOWN [accept req only from main node]
-    if (_programState == MOTION && (targetState == STANDBY || targetState == SHUTDOWN)){
-        return callerId == mainNodeId;
-    }
+    return true;
+}
 
-    //change state from EMERGENCY or to EMERGENCY [accept req only from safety node]
-    if (_programState == EMERGENCY || targetState == EMERGENCY){
-        return callerId == safetyNodeId;
-    }
-
-    return false;
+//------------------------------------------------------------------------------
+//			SAFETY NODE STATE TOPIC SUBSCRIBER CALLBACK
+//------------------------------------------------------------------------------
+void SafetyNodeStateTopicSubscriberCallback(const std_msgs::Int32::ConstPtr& msg)
+{
+    _safetyNodeState = msg->data;
 }
 
 //------------------------------------------------------------------------------
@@ -86,6 +92,9 @@ void ChangeProgramStateTo(int programState) {
         break;
         case EMERGENCY:
             desc = "[EMERGENCY]";
+        break;
+        case FAILURE:
+            desc = "[FAILURE]";
         break;
     }
 
@@ -139,6 +148,14 @@ void Motion(){
 
     bool allGood = EvaluateMotionSystemCondition(true, true);
     if (!allGood) return;
+
+    bool motionAllowed = IsMotionAllowed(_safetyNodeState);
+    if (!motionAllowed){
+        ChangeProgramStateTo(STANDBY); // Stop Motion Func
+        return;
+    }
+
+
 }
 
 //-----------------------------------------------------------------------------
@@ -168,10 +185,6 @@ void Shutdown(){
 //-----------------------------------------------------------------------------
 void Alarm(){
 
-    // Stop servos, send ext signal about motion system alarm
-    //while(getchar()!='\n')
-
-    //ChangeProgramStateTo(INITIALIZATION);
 }
 
 //-----------------------------------------------------------------------------
@@ -180,10 +193,14 @@ void Alarm(){
 //-----------------------------------------------------------------------------
 void Emergency(){
 
-    // Stop servos, send ext signal about motion system emergency
-    //while(getchar()!='\n')
+}
 
-    //ChangeProgramStateTo(INITIALIZATION);
+//-----------------------------------------------------------------------------
+//				             FAILURE
+// 
+//-----------------------------------------------------------------------------
+void Failure(){
+
 }
 
 //------------------------------------------------------------------------------
@@ -201,7 +218,9 @@ int main(int argc, char** argv) {
     }
         
     ros::Publisher pub = nh.advertise<std_msgs::Int32>("servo_control_node/state", 1000);
-    ros::ServiceServer changeStateService = nh.advertiseService("servo_control_node/change_state_service", ChangeStateServiceCallback);
+    ros::ServiceServer changeNodeStateService = nh.advertiseService("servo_control_node/change_node_state_service", ChangeNodeStateServicePublisherCallback);
+
+    ros::Subscriber sub = nh.subscribe("safety_node/state", 1000, SafetyNodeStateTopicSubscriberCallback);
 
     ROS_INFO("Servo Control Node started.");
     ChangeProgramStateTo(INITIALIZATION);
@@ -233,6 +252,10 @@ int main(int argc, char** argv) {
             case EMERGENCY:
                 Emergency();
                 break;
+
+            case FAILURE:
+                Failure();
+                break;
             
             default:
                 break;
@@ -259,21 +282,27 @@ bool EvaluateMotionSystemCondition(bool shouldBeConnected, bool shouldBeEnabled)
 
     if (shouldBeConnected && !AllServosConnected(servos)) syscon = COMM_FAILURE;
     else if (shouldBeEnabled && !AllServosEnabled(servos)) syscon = AVAIL_FAILURE;
-    else if (AnyServoInAlarmState(servos)) syscon = ALARM_YELLOW;
+    else if (AnyServoInEmergencyState(servos)) syscon = IN_EMERGENCY;
+    else if (AnyServoInAlarmState(servos)) syscon = IN_ALARM;
     
     switch(syscon){
 
         case COMM_FAILURE:
-            ChangeProgramStateTo(EMERGENCY);
+            ChangeProgramStateTo(FAILURE);
             return false;
             break;
 
         case AVAIL_FAILURE:
+            ChangeProgramStateTo(FAILURE);
+            return false;
+            break;
+
+        case IN_EMERGENCY:
             ChangeProgramStateTo(EMERGENCY);
             return false;
             break;
 
-        case ALARM_YELLOW:
+        case IN_ALARM:
             ChangeProgramStateTo(ALARM);
             return false;
             break;
@@ -281,3 +310,10 @@ bool EvaluateMotionSystemCondition(bool shouldBeConnected, bool shouldBeEnabled)
 
     return true;
 } 
+
+//------------------------------------------------------------------------------
+//				     --> ALLOW MOTION <--
+//------------------------------------------------------------------------------
+bool IsMotionAllowed(int safetyNodeState){
+    return (safetyNodeState == safetyNodeArmedState);
+}

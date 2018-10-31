@@ -53,21 +53,21 @@ CMAKE_BINARY_DIR = /home/michal/catkin_ws/build
 # Include the progress variables for this target.
 include custom_msg_pkg/CMakeFiles/custom_msg_pkg_generate_messages_eus.dir/progress.make
 
-custom_msg_pkg/CMakeFiles/custom_msg_pkg_generate_messages_eus: /home/michal/catkin_ws/devel/share/roseus/ros/custom_msg_pkg/srv/SCNChangeStateServiceMsg.l
+custom_msg_pkg/CMakeFiles/custom_msg_pkg_generate_messages_eus: /home/michal/catkin_ws/devel/share/roseus/ros/custom_msg_pkg/srv/ChangeNodeStateServiceMsg.l
 custom_msg_pkg/CMakeFiles/custom_msg_pkg_generate_messages_eus: /home/michal/catkin_ws/devel/share/roseus/ros/custom_msg_pkg/manifest.l
 
 
-/home/michal/catkin_ws/devel/share/roseus/ros/custom_msg_pkg/srv/SCNChangeStateServiceMsg.l: /opt/ros/melodic/lib/geneus/gen_eus.py
-/home/michal/catkin_ws/devel/share/roseus/ros/custom_msg_pkg/srv/SCNChangeStateServiceMsg.l: /home/michal/catkin_ws/src/custom_msg_pkg/srv/SCNChangeStateServiceMsg.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/michal/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from custom_msg_pkg/SCNChangeStateServiceMsg.srv"
-	cd /home/michal/catkin_ws/build/custom_msg_pkg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/michal/catkin_ws/src/custom_msg_pkg/srv/SCNChangeStateServiceMsg.srv -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p custom_msg_pkg -o /home/michal/catkin_ws/devel/share/roseus/ros/custom_msg_pkg/srv
+/home/michal/catkin_ws/devel/share/roseus/ros/custom_msg_pkg/srv/ChangeNodeStateServiceMsg.l: /opt/ros/melodic/lib/geneus/gen_eus.py
+/home/michal/catkin_ws/devel/share/roseus/ros/custom_msg_pkg/srv/ChangeNodeStateServiceMsg.l: /home/michal/catkin_ws/src/custom_msg_pkg/srv/ChangeNodeStateServiceMsg.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/michal/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from custom_msg_pkg/ChangeNodeStateServiceMsg.srv"
+	cd /home/michal/catkin_ws/build/custom_msg_pkg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/michal/catkin_ws/src/custom_msg_pkg/srv/ChangeNodeStateServiceMsg.srv -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p custom_msg_pkg -o /home/michal/catkin_ws/devel/share/roseus/ros/custom_msg_pkg/srv
 
 /home/michal/catkin_ws/devel/share/roseus/ros/custom_msg_pkg/manifest.l: /opt/ros/melodic/lib/geneus/gen_eus.py
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/michal/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp manifest code for custom_msg_pkg"
 	cd /home/michal/catkin_ws/build/custom_msg_pkg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/michal/catkin_ws/devel/share/roseus/ros/custom_msg_pkg custom_msg_pkg std_msgs
 
 custom_msg_pkg_generate_messages_eus: custom_msg_pkg/CMakeFiles/custom_msg_pkg_generate_messages_eus
-custom_msg_pkg_generate_messages_eus: /home/michal/catkin_ws/devel/share/roseus/ros/custom_msg_pkg/srv/SCNChangeStateServiceMsg.l
+custom_msg_pkg_generate_messages_eus: /home/michal/catkin_ws/devel/share/roseus/ros/custom_msg_pkg/srv/ChangeNodeStateServiceMsg.l
 custom_msg_pkg_generate_messages_eus: /home/michal/catkin_ws/devel/share/roseus/ros/custom_msg_pkg/manifest.l
 custom_msg_pkg_generate_messages_eus: custom_msg_pkg/CMakeFiles/custom_msg_pkg_generate_messages_eus.dir/build.make
 

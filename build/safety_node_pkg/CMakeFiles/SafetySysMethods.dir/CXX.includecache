@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/michal/catkin_ws/src/safety_node_pkg/include/SafetySysMethods.h
+
+/home/michal/catkin_ws/src/safety_node_pkg/src/SafetySysMethods.cpp
+SafetySysMethods.h
+/home/michal/catkin_ws/src/safety_node_pkg/src/SafetySysMethods.h
+

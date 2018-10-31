@@ -53,16 +53,16 @@ CMAKE_BINARY_DIR = /home/michal/catkin_ws/build
 # Include the progress variables for this target.
 include custom_msg_pkg/CMakeFiles/custom_msg_pkg_generate_messages_nodejs.dir/progress.make
 
-custom_msg_pkg/CMakeFiles/custom_msg_pkg_generate_messages_nodejs: /home/michal/catkin_ws/devel/share/gennodejs/ros/custom_msg_pkg/srv/SCNChangeStateServiceMsg.js
+custom_msg_pkg/CMakeFiles/custom_msg_pkg_generate_messages_nodejs: /home/michal/catkin_ws/devel/share/gennodejs/ros/custom_msg_pkg/srv/ChangeNodeStateServiceMsg.js
 
 
-/home/michal/catkin_ws/devel/share/gennodejs/ros/custom_msg_pkg/srv/SCNChangeStateServiceMsg.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
-/home/michal/catkin_ws/devel/share/gennodejs/ros/custom_msg_pkg/srv/SCNChangeStateServiceMsg.js: /home/michal/catkin_ws/src/custom_msg_pkg/srv/SCNChangeStateServiceMsg.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/michal/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from custom_msg_pkg/SCNChangeStateServiceMsg.srv"
-	cd /home/michal/catkin_ws/build/custom_msg_pkg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/michal/catkin_ws/src/custom_msg_pkg/srv/SCNChangeStateServiceMsg.srv -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p custom_msg_pkg -o /home/michal/catkin_ws/devel/share/gennodejs/ros/custom_msg_pkg/srv
+/home/michal/catkin_ws/devel/share/gennodejs/ros/custom_msg_pkg/srv/ChangeNodeStateServiceMsg.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+/home/michal/catkin_ws/devel/share/gennodejs/ros/custom_msg_pkg/srv/ChangeNodeStateServiceMsg.js: /home/michal/catkin_ws/src/custom_msg_pkg/srv/ChangeNodeStateServiceMsg.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/michal/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from custom_msg_pkg/ChangeNodeStateServiceMsg.srv"
+	cd /home/michal/catkin_ws/build/custom_msg_pkg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/michal/catkin_ws/src/custom_msg_pkg/srv/ChangeNodeStateServiceMsg.srv -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p custom_msg_pkg -o /home/michal/catkin_ws/devel/share/gennodejs/ros/custom_msg_pkg/srv
 
 custom_msg_pkg_generate_messages_nodejs: custom_msg_pkg/CMakeFiles/custom_msg_pkg_generate_messages_nodejs
-custom_msg_pkg_generate_messages_nodejs: /home/michal/catkin_ws/devel/share/gennodejs/ros/custom_msg_pkg/srv/SCNChangeStateServiceMsg.js
+custom_msg_pkg_generate_messages_nodejs: /home/michal/catkin_ws/devel/share/gennodejs/ros/custom_msg_pkg/srv/ChangeNodeStateServiceMsg.js
 custom_msg_pkg_generate_messages_nodejs: custom_msg_pkg/CMakeFiles/custom_msg_pkg_generate_messages_nodejs.dir/build.make
 
 .PHONY : custom_msg_pkg_generate_messages_nodejs

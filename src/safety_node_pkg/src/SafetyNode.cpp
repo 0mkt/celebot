@@ -13,6 +13,43 @@ bool ReadNodesConfig(ros::NodeHandle nh){
 } 
 
 //------------------------------------------------------------------------------
+//				       --> ROS CALLBACKS <--
+//------------------------------------------------------------------------------
+bool ChangeNodeStateServiceCallback(custom_msg_pkg::ChangeNodeStateServiceMsg::Request &req,
+                 custom_msg_pkg::ChangeNodeStateServiceMsg::Response &res)
+{  
+    ROS_INFO("ChangeNodeStateServiceCallback has been called"); 
+    ROS_INFO("Request Data==> targetState=%d, callerId=%d", req.targetState, req.callerId);
+
+    bool reqValid = ValidateChangeStateRequest(req.targetState, req.callerId);
+    
+    if (reqValid) {
+        ROS_INFO("Request accepted!");
+
+        ChangeProgramStateTo(req.targetState);
+        res.result = _programState;
+        res.errorDesc = "All good";
+        
+    } else {
+        ROS_WARN("Request is invalid. Rejecting request!");
+
+        res.result = -1; 
+        res.errorDesc = "Request was rejected.";
+    } 
+
+    return true;
+}
+
+bool ValidateChangeStateRequest(int targetState, int callerId){
+
+    if (callerId != mainNodeId) return false;
+    if (_programState == BREACH && targetState != DISARMED) return false;
+    if (_programState == FAILURE && targetState != INITIALIZATION) return false;
+
+    return true;
+}
+
+//------------------------------------------------------------------------------
 //				      --> PROGRAM STATES <--
 //------------------------------------------------------------------------------
 void ChangeProgramStateTo(int programState) {
@@ -36,6 +73,9 @@ void ChangeProgramStateTo(int programState) {
         case BREACH:
             desc = "[BREACH]";
         break;
+        case FAILURE:
+            desc = "[FAILURE]";
+        break;
     }
 
     ROS_INFO_STREAM("Program state changed to: " << desc);
@@ -49,9 +89,10 @@ void Initialization(){
 
     // establish connection with external safety system
 
-    // check connection with external system
-    // if ok - goto Disarmed state.
-    // if not ok - goto Failure state
+    bool allGood = EvaluateSafetySystemCondition(true, false);
+    if (!allGood) return;
+
+    ChangeProgramStateTo(DISARMED);
 }
 
 //-----------------------------------------------------------------------------
@@ -60,8 +101,8 @@ void Initialization(){
 //-----------------------------------------------------------------------------
 void Disarmed(){
 
-    // check connection with external system
-    // if not ok goto Failure state
+    bool allGood = EvaluateSafetySystemCondition(true, false);
+    if (!allGood) return;
 }
 
 //-----------------------------------------------------------------------------
@@ -70,11 +111,8 @@ void Disarmed(){
 //-----------------------------------------------------------------------------
 void Armed(){
     
-    // check connection with external system
-    // if not ok goto Failure state
-
-    // check safetyOk signal from external system
-    // if not ok goto Breach state
+    bool allGood = EvaluateSafetySystemCondition(true, true);
+    if (!allGood) return;
 }
 
 //-----------------------------------------------------------------------------
@@ -84,6 +122,7 @@ void Armed(){
 void Shutdown(){
 
     // disconnect external safety system
+
     _shutdown = true;
 }
 
@@ -93,6 +132,11 @@ void Shutdown(){
 //-----------------------------------------------------------------------------
 void Breach(){
 
+    bool allGood = EvaluateSafetySystemCondition(true, false);
+    if (!allGood) return;
+
+    // wait for reset signal from main node
+    // goto Disarmed state 
 }
 
 //-----------------------------------------------------------------------------
@@ -101,6 +145,8 @@ void Breach(){
 //-----------------------------------------------------------------------------
 void Failure(){
 
+    // wait for restart
+    // goto Initialization state
 }
 
 //------------------------------------------------------------------------------
@@ -118,7 +164,7 @@ int main(int argc, char** argv) {
     }
         
     ros::Publisher pub = nh.advertise<std_msgs::Int32>("safety_node/state", 1000);
-    ros::ServiceServer changeStateService = nh.advertiseService("safety_node/change_state_service", ChangeStateServiceCallback);
+    ros::ServiceServer changeNodeStateService = nh.advertiseService("safety_node/change_node_state_service", ChangeNodeStateServiceCallback);
 
     ROS_INFO("Safety Node started.");
     ChangeProgramStateTo(INITIALIZATION);
@@ -166,3 +212,29 @@ int main(int argc, char** argv) {
     usleep(5000000);
     return 0;
 }
+
+//------------------------------------------------------------------------------
+//				  --> SAFETY SYSTEM CONDITION <--
+//------------------------------------------------------------------------------
+bool EvaluateSafetySystemCondition(bool shouldBeConnected, bool shouldTransmitSafetyOkSignal){
+
+    int syscon = ALL_GOOD;
+
+    if (shouldBeConnected && !SafetySystemConnected()) syscon = COMM_FAILURE;
+    else if (shouldTransmitSafetyOkSignal && !SafetySystemOkSignalActive()) syscon = SAFETY_BREACH;
+    
+    switch(syscon){
+
+        case COMM_FAILURE:
+            ChangeProgramStateTo(FAILURE);
+            return false;
+            break;
+
+        case SAFETY_BREACH:
+            ChangeProgramStateTo(BREACH);
+            return false;
+            break;
+    }
+
+    return true;
+} 

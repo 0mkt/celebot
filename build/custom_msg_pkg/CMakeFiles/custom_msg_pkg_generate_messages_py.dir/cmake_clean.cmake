@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/custom_msg_pkg_generate_messages_py"
-  "/home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/srv/_SCNChangeStateServiceMsg.py"
+  "/home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/srv/_ChangeNodeStateServiceMsg.py"
   "/home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/srv/__init__.py"
 )
 

@@ -53,22 +53,22 @@ CMAKE_BINARY_DIR = /home/michal/catkin_ws/build
 # Include the progress variables for this target.
 include custom_msg_pkg/CMakeFiles/custom_msg_pkg_generate_messages_py.dir/progress.make
 
-custom_msg_pkg/CMakeFiles/custom_msg_pkg_generate_messages_py: /home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/srv/_SCNChangeStateServiceMsg.py
+custom_msg_pkg/CMakeFiles/custom_msg_pkg_generate_messages_py: /home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/srv/_ChangeNodeStateServiceMsg.py
 custom_msg_pkg/CMakeFiles/custom_msg_pkg_generate_messages_py: /home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/srv/__init__.py
 
 
-/home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/srv/_SCNChangeStateServiceMsg.py: /opt/ros/melodic/lib/genpy/gensrv_py.py
-/home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/srv/_SCNChangeStateServiceMsg.py: /home/michal/catkin_ws/src/custom_msg_pkg/srv/SCNChangeStateServiceMsg.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/michal/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code from SRV custom_msg_pkg/SCNChangeStateServiceMsg"
-	cd /home/michal/catkin_ws/build/custom_msg_pkg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/michal/catkin_ws/src/custom_msg_pkg/srv/SCNChangeStateServiceMsg.srv -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p custom_msg_pkg -o /home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/srv
+/home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/srv/_ChangeNodeStateServiceMsg.py: /opt/ros/melodic/lib/genpy/gensrv_py.py
+/home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/srv/_ChangeNodeStateServiceMsg.py: /home/michal/catkin_ws/src/custom_msg_pkg/srv/ChangeNodeStateServiceMsg.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/michal/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code from SRV custom_msg_pkg/ChangeNodeStateServiceMsg"
+	cd /home/michal/catkin_ws/build/custom_msg_pkg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/michal/catkin_ws/src/custom_msg_pkg/srv/ChangeNodeStateServiceMsg.srv -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p custom_msg_pkg -o /home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/srv
 
 /home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/srv/__init__.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
-/home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/srv/__init__.py: /home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/srv/_SCNChangeStateServiceMsg.py
+/home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/srv/__init__.py: /home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/srv/_ChangeNodeStateServiceMsg.py
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/michal/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python srv __init__.py for custom_msg_pkg"
 	cd /home/michal/catkin_ws/build/custom_msg_pkg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/srv --initpy
 
 custom_msg_pkg_generate_messages_py: custom_msg_pkg/CMakeFiles/custom_msg_pkg_generate_messages_py
-custom_msg_pkg_generate_messages_py: /home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/srv/_SCNChangeStateServiceMsg.py
+custom_msg_pkg_generate_messages_py: /home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/srv/_ChangeNodeStateServiceMsg.py
 custom_msg_pkg_generate_messages_py: /home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/srv/__init__.py
 custom_msg_pkg_generate_messages_py: custom_msg_pkg/CMakeFiles/custom_msg_pkg_generate_messages_py.dir/build.make
 

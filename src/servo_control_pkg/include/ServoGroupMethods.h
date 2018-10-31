@@ -19,3 +19,4 @@ bool AllServosStopped(vector<Servo> &servos);
 void EmergencyStopServos(vector<Servo> &servos);
 void UpdateServosStatuses(vector<Servo> &servos);
 bool AnyServoInAlarmState(vector<Servo> &servos);
+bool AnyServoInEmergencyState(vector<Servo> &servos);

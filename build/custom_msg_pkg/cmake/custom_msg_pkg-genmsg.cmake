@@ -17,9 +17,9 @@ add_custom_target(custom_msg_pkg_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/michal/catkin_ws/src/custom_msg_pkg/srv/SCNChangeStateServiceMsg.srv" NAME_WE)
+get_filename_component(_filename "/home/michal/catkin_ws/src/custom_msg_pkg/srv/ChangeNodeStateServiceMsg.srv" NAME_WE)
 add_custom_target(_custom_msg_pkg_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "custom_msg_pkg" "/home/michal/catkin_ws/src/custom_msg_pkg/srv/SCNChangeStateServiceMsg.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "custom_msg_pkg" "/home/michal/catkin_ws/src/custom_msg_pkg/srv/ChangeNodeStateServiceMsg.srv" ""
 )
 
 #
@@ -31,7 +31,7 @@ add_custom_target(_custom_msg_pkg_generate_messages_check_deps_${_filename}
 
 ### Generating Services
 _generate_srv_cpp(custom_msg_pkg
-  "/home/michal/catkin_ws/src/custom_msg_pkg/srv/SCNChangeStateServiceMsg.srv"
+  "/home/michal/catkin_ws/src/custom_msg_pkg/srv/ChangeNodeStateServiceMsg.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/custom_msg_pkg
@@ -49,7 +49,7 @@ add_custom_target(custom_msg_pkg_generate_messages_cpp
 add_dependencies(custom_msg_pkg_generate_messages custom_msg_pkg_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/michal/catkin_ws/src/custom_msg_pkg/srv/SCNChangeStateServiceMsg.srv" NAME_WE)
+get_filename_component(_filename "/home/michal/catkin_ws/src/custom_msg_pkg/srv/ChangeNodeStateServiceMsg.srv" NAME_WE)
 add_dependencies(custom_msg_pkg_generate_messages_cpp _custom_msg_pkg_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -64,7 +64,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS custom_msg_pkg_generate_messages_cp
 
 ### Generating Services
 _generate_srv_eus(custom_msg_pkg
-  "/home/michal/catkin_ws/src/custom_msg_pkg/srv/SCNChangeStateServiceMsg.srv"
+  "/home/michal/catkin_ws/src/custom_msg_pkg/srv/ChangeNodeStateServiceMsg.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/custom_msg_pkg
@@ -82,7 +82,7 @@ add_custom_target(custom_msg_pkg_generate_messages_eus
 add_dependencies(custom_msg_pkg_generate_messages custom_msg_pkg_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/michal/catkin_ws/src/custom_msg_pkg/srv/SCNChangeStateServiceMsg.srv" NAME_WE)
+get_filename_component(_filename "/home/michal/catkin_ws/src/custom_msg_pkg/srv/ChangeNodeStateServiceMsg.srv" NAME_WE)
 add_dependencies(custom_msg_pkg_generate_messages_eus _custom_msg_pkg_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -97,7 +97,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS custom_msg_pkg_generate_messages_eu
 
 ### Generating Services
 _generate_srv_lisp(custom_msg_pkg
-  "/home/michal/catkin_ws/src/custom_msg_pkg/srv/SCNChangeStateServiceMsg.srv"
+  "/home/michal/catkin_ws/src/custom_msg_pkg/srv/ChangeNodeStateServiceMsg.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/custom_msg_pkg
@@ -115,7 +115,7 @@ add_custom_target(custom_msg_pkg_generate_messages_lisp
 add_dependencies(custom_msg_pkg_generate_messages custom_msg_pkg_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/michal/catkin_ws/src/custom_msg_pkg/srv/SCNChangeStateServiceMsg.srv" NAME_WE)
+get_filename_component(_filename "/home/michal/catkin_ws/src/custom_msg_pkg/srv/ChangeNodeStateServiceMsg.srv" NAME_WE)
 add_dependencies(custom_msg_pkg_generate_messages_lisp _custom_msg_pkg_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -130,7 +130,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS custom_msg_pkg_generate_messages_li
 
 ### Generating Services
 _generate_srv_nodejs(custom_msg_pkg
-  "/home/michal/catkin_ws/src/custom_msg_pkg/srv/SCNChangeStateServiceMsg.srv"
+  "/home/michal/catkin_ws/src/custom_msg_pkg/srv/ChangeNodeStateServiceMsg.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/custom_msg_pkg
@@ -148,7 +148,7 @@ add_custom_target(custom_msg_pkg_generate_messages_nodejs
 add_dependencies(custom_msg_pkg_generate_messages custom_msg_pkg_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/michal/catkin_ws/src/custom_msg_pkg/srv/SCNChangeStateServiceMsg.srv" NAME_WE)
+get_filename_component(_filename "/home/michal/catkin_ws/src/custom_msg_pkg/srv/ChangeNodeStateServiceMsg.srv" NAME_WE)
 add_dependencies(custom_msg_pkg_generate_messages_nodejs _custom_msg_pkg_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -163,7 +163,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS custom_msg_pkg_generate_messages_no
 
 ### Generating Services
 _generate_srv_py(custom_msg_pkg
-  "/home/michal/catkin_ws/src/custom_msg_pkg/srv/SCNChangeStateServiceMsg.srv"
+  "/home/michal/catkin_ws/src/custom_msg_pkg/srv/ChangeNodeStateServiceMsg.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/custom_msg_pkg
@@ -181,7 +181,7 @@ add_custom_target(custom_msg_pkg_generate_messages_py
 add_dependencies(custom_msg_pkg_generate_messages custom_msg_pkg_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/michal/catkin_ws/src/custom_msg_pkg/srv/SCNChangeStateServiceMsg.srv" NAME_WE)
+get_filename_component(_filename "/home/michal/catkin_ws/src/custom_msg_pkg/srv/ChangeNodeStateServiceMsg.srv" NAME_WE)
 add_dependencies(custom_msg_pkg_generate_messages_py _custom_msg_pkg_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

@@ -53,18 +53,18 @@ CMAKE_BINARY_DIR = /home/michal/catkin_ws/build
 # Include the progress variables for this target.
 include custom_msg_pkg/CMakeFiles/custom_msg_pkg_generate_messages_cpp.dir/progress.make
 
-custom_msg_pkg/CMakeFiles/custom_msg_pkg_generate_messages_cpp: /home/michal/catkin_ws/devel/include/custom_msg_pkg/SCNChangeStateServiceMsg.h
+custom_msg_pkg/CMakeFiles/custom_msg_pkg_generate_messages_cpp: /home/michal/catkin_ws/devel/include/custom_msg_pkg/ChangeNodeStateServiceMsg.h
 
 
-/home/michal/catkin_ws/devel/include/custom_msg_pkg/SCNChangeStateServiceMsg.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
-/home/michal/catkin_ws/devel/include/custom_msg_pkg/SCNChangeStateServiceMsg.h: /home/michal/catkin_ws/src/custom_msg_pkg/srv/SCNChangeStateServiceMsg.srv
-/home/michal/catkin_ws/devel/include/custom_msg_pkg/SCNChangeStateServiceMsg.h: /opt/ros/melodic/share/gencpp/msg.h.template
-/home/michal/catkin_ws/devel/include/custom_msg_pkg/SCNChangeStateServiceMsg.h: /opt/ros/melodic/share/gencpp/srv.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/michal/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from custom_msg_pkg/SCNChangeStateServiceMsg.srv"
-	cd /home/michal/catkin_ws/src/custom_msg_pkg && /home/michal/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/michal/catkin_ws/src/custom_msg_pkg/srv/SCNChangeStateServiceMsg.srv -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p custom_msg_pkg -o /home/michal/catkin_ws/devel/include/custom_msg_pkg -e /opt/ros/melodic/share/gencpp/cmake/..
+/home/michal/catkin_ws/devel/include/custom_msg_pkg/ChangeNodeStateServiceMsg.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
+/home/michal/catkin_ws/devel/include/custom_msg_pkg/ChangeNodeStateServiceMsg.h: /home/michal/catkin_ws/src/custom_msg_pkg/srv/ChangeNodeStateServiceMsg.srv
+/home/michal/catkin_ws/devel/include/custom_msg_pkg/ChangeNodeStateServiceMsg.h: /opt/ros/melodic/share/gencpp/msg.h.template
+/home/michal/catkin_ws/devel/include/custom_msg_pkg/ChangeNodeStateServiceMsg.h: /opt/ros/melodic/share/gencpp/srv.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/michal/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from custom_msg_pkg/ChangeNodeStateServiceMsg.srv"
+	cd /home/michal/catkin_ws/src/custom_msg_pkg && /home/michal/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/michal/catkin_ws/src/custom_msg_pkg/srv/ChangeNodeStateServiceMsg.srv -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p custom_msg_pkg -o /home/michal/catkin_ws/devel/include/custom_msg_pkg -e /opt/ros/melodic/share/gencpp/cmake/..
 
 custom_msg_pkg_generate_messages_cpp: custom_msg_pkg/CMakeFiles/custom_msg_pkg_generate_messages_cpp
-custom_msg_pkg_generate_messages_cpp: /home/michal/catkin_ws/devel/include/custom_msg_pkg/SCNChangeStateServiceMsg.h
+custom_msg_pkg_generate_messages_cpp: /home/michal/catkin_ws/devel/include/custom_msg_pkg/ChangeNodeStateServiceMsg.h
 custom_msg_pkg_generate_messages_cpp: custom_msg_pkg/CMakeFiles/custom_msg_pkg_generate_messages_cpp.dir/build.make
 
 .PHONY : custom_msg_pkg_generate_messages_cpp

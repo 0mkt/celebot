@@ -33,9 +33,10 @@ public:
 	} settingsPID;
 	
 	struct Status {
-		bool alarm = false;
 		bool connected = false;
 		bool enabled = false;
+		bool alarm = false;
+		bool emergency = false;
 		bool stopping = false;
 		bool moving = false;
 	} status;

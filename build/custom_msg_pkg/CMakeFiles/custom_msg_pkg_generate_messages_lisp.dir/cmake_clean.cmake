@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/custom_msg_pkg_generate_messages_lisp"
-  "/home/michal/catkin_ws/devel/share/common-lisp/ros/custom_msg_pkg/srv/SCNChangeStateServiceMsg.lisp"
+  "/home/michal/catkin_ws/devel/share/common-lisp/ros/custom_msg_pkg/srv/ChangeNodeStateServiceMsg.lisp"
 )
 
 # Per-language clean rules from dependency scanning.
