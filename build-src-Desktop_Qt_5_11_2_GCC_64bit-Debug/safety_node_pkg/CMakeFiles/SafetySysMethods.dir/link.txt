@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -g  -shared -Wl,-soname,libSafetySysMethods.so -o ../devel/lib/libSafetySysMethods.so CMakeFiles/SafetySysMethods.dir/src/SafetySysMethods.cpp.o 

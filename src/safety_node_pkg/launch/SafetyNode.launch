@@ -1,0 +1,5 @@
+<launch>
+    <!-- My Package launch file -->
+    <node pkg="safety_node_pkg" type="SafetyNode" name="safety_node"  output="screen">
+    </node>
+</launch>

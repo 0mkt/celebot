@@ -38,7 +38,16 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/custom_msg_pkg/srv" TYPE FILE FILES "/home/michal/catkin_ws/src/custom_msg_pkg/srv/ChangeNodeStateServiceMsg.srv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/custom_msg_pkg/msg" TYPE FILE FILES
+    "/home/michal/catkin_ws/src/custom_msg_pkg/msg/EziServoActualMotion.msg"
+    "/home/michal/catkin_ws/src/custom_msg_pkg/msg/EziServoStatus.msg"
+    "/home/michal/catkin_ws/src/custom_msg_pkg/msg/EziServoData.msg"
+    "/home/michal/catkin_ws/src/custom_msg_pkg/msg/EziServosData.msg"
+    )
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/custom_msg_pkg/srv" TYPE FILE FILES "/home/michal/catkin_ws/src/custom_msg_pkg/srv/ChangeNodeStateSrv.srv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

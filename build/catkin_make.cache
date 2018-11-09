@@ -1,2 +1,2 @@
-custom_msg_pkg:main_node_pkg:safety_node_pkg:servo_control_pkg
+custom_msg_pkg:gui_app_pkg:main_node_pkg:safety_node_pkg:servo_control_node_pkg
 -DCATKIN_DEVEL_PREFIX=/home/michal/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/michal/catkin_ws/install -G Unix Makefiles

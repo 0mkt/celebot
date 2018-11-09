@@ -1,7 +1,7 @@
 #pragma once
 #include <ros/ros.h>
 #include "std_msgs/Int32.h"
-#include "custom_msg_pkg/ChangeNodeStateServiceMsg.h"
+#include "custom_msg_pkg/ChangeNodeStateSrv.h"
 #include "SafetySysMethods.h"
 
 using namespace std;

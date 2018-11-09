@@ -1,0 +1,8 @@
+prefix=/home/michal/catkin_ws/build/devel
+
+Name: gui_app_pkg
+Description: Description of gui_app_pkg
+Version: 0.1.0
+Cflags: 
+Libs: -L/home/michal/catkin_ws/build/devel/lib 
+Requires: 

@@ -1,0 +1,122 @@
+[
+{
+  "directory": "/home/michal/catkin_ws/src/build/gtest/googlemock",
+  "command": "/usr/bin/g++-7  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_main_EXPORTS -I/usr/src/googletest/googlemock/include -I/usr/src/googletest/googlemock -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest  -g -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.o -c /usr/src/googletest/googletest/src/gtest-all.cc",
+  "file": "/usr/src/googletest/googletest/src/gtest-all.cc"
+},
+{
+  "directory": "/home/michal/catkin_ws/src/build/gtest/googlemock",
+  "command": "/usr/bin/g++-7  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_main_EXPORTS -I/usr/src/googletest/googlemock/include -I/usr/src/googletest/googlemock -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest  -g -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock_main.dir/src/gmock-all.cc.o -c /usr/src/googletest/googlemock/src/gmock-all.cc",
+  "file": "/usr/src/googletest/googlemock/src/gmock-all.cc"
+},
+{
+  "directory": "/home/michal/catkin_ws/src/build/gtest/googlemock",
+  "command": "/usr/bin/g++-7  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_main_EXPORTS -I/usr/src/googletest/googlemock/include -I/usr/src/googletest/googlemock -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest  -g -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -c /usr/src/googletest/googlemock/src/gmock_main.cc",
+  "file": "/usr/src/googletest/googlemock/src/gmock_main.cc"
+},
+{
+  "directory": "/home/michal/catkin_ws/src/build/gtest/googlemock",
+  "command": "/usr/bin/g++-7  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_EXPORTS -I/usr/src/googletest/googlemock/include -I/usr/src/googletest/googlemock -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest  -g -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock.dir/__/googletest/src/gtest-all.cc.o -c /usr/src/googletest/googletest/src/gtest-all.cc",
+  "file": "/usr/src/googletest/googletest/src/gtest-all.cc"
+},
+{
+  "directory": "/home/michal/catkin_ws/src/build/gtest/googlemock",
+  "command": "/usr/bin/g++-7  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_EXPORTS -I/usr/src/googletest/googlemock/include -I/usr/src/googletest/googlemock -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest  -g -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock.dir/src/gmock-all.cc.o -c /usr/src/googletest/googlemock/src/gmock-all.cc",
+  "file": "/usr/src/googletest/googlemock/src/gmock-all.cc"
+},
+{
+  "directory": "/home/michal/catkin_ws/src/build/gtest/googlemock/gtest",
+  "command": "/usr/bin/g++-7  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgtest_main_EXPORTS -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest  -g -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /usr/src/googletest/googletest/src/gtest_main.cc",
+  "file": "/usr/src/googletest/googletest/src/gtest_main.cc"
+},
+{
+  "directory": "/home/michal/catkin_ws/src/build/gtest/googlemock/gtest",
+  "command": "/usr/bin/g++-7  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgtest_EXPORTS -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest  -g -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /usr/src/googletest/googletest/src/gtest-all.cc",
+  "file": "/usr/src/googletest/googletest/src/gtest-all.cc"
+},
+{
+  "directory": "/home/michal/catkin_ws/src/build/gui_app_pkg",
+  "command": "/usr/bin/g++-7  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"gui_app_pkg\\\" -I/home/michal/catkin_ws/src/build/gui_app_pkg -I/home/michal/catkin_ws/src/gui_app_pkg -I/home/michal/catkin_ws/src/build/gui_app_pkg/GuiApp_autogen/include -I/home/michal/catkin_ws/src/gui_app_pkg/include -I/home/michal/catkin_ws/src/build/devel/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++    -std=c++11 -g   -fPIC -std=gnu++11 -o CMakeFiles/GuiApp.dir/src/main.cpp.o -c /home/michal/catkin_ws/src/gui_app_pkg/src/main.cpp",
+  "file": "/home/michal/catkin_ws/src/gui_app_pkg/src/main.cpp"
+},
+{
+  "directory": "/home/michal/catkin_ws/src/build/gui_app_pkg",
+  "command": "/usr/bin/g++-7  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"gui_app_pkg\\\" -I/home/michal/catkin_ws/src/build/gui_app_pkg -I/home/michal/catkin_ws/src/gui_app_pkg -I/home/michal/catkin_ws/src/build/gui_app_pkg/GuiApp_autogen/include -I/home/michal/catkin_ws/src/gui_app_pkg/include -I/home/michal/catkin_ws/src/build/devel/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++    -std=c++11 -g   -fPIC -std=gnu++11 -o CMakeFiles/GuiApp.dir/src/main_window.cpp.o -c /home/michal/catkin_ws/src/gui_app_pkg/src/main_window.cpp",
+  "file": "/home/michal/catkin_ws/src/gui_app_pkg/src/main_window.cpp"
+},
+{
+  "directory": "/home/michal/catkin_ws/src/build/gui_app_pkg",
+  "command": "/usr/bin/g++-7  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"gui_app_pkg\\\" -I/home/michal/catkin_ws/src/build/gui_app_pkg -I/home/michal/catkin_ws/src/gui_app_pkg -I/home/michal/catkin_ws/src/build/gui_app_pkg/GuiApp_autogen/include -I/home/michal/catkin_ws/src/gui_app_pkg/include -I/home/michal/catkin_ws/src/build/devel/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++    -std=c++11 -g   -fPIC -std=gnu++11 -o CMakeFiles/GuiApp.dir/src/qnode.cpp.o -c /home/michal/catkin_ws/src/gui_app_pkg/src/qnode.cpp",
+  "file": "/home/michal/catkin_ws/src/gui_app_pkg/src/qnode.cpp"
+},
+{
+  "directory": "/home/michal/catkin_ws/src/build/gui_app_pkg",
+  "command": "/usr/bin/g++-7  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"gui_app_pkg\\\" -I/home/michal/catkin_ws/src/build/gui_app_pkg -I/home/michal/catkin_ws/src/gui_app_pkg -I/home/michal/catkin_ws/src/build/gui_app_pkg/GuiApp_autogen/include -I/home/michal/catkin_ws/src/gui_app_pkg/include -I/home/michal/catkin_ws/src/build/devel/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++    -std=c++11 -g   -fPIC -std=gnu++11 -o CMakeFiles/GuiApp.dir/src/moc_main.cpp.o -c /home/michal/catkin_ws/src/build/gui_app_pkg/src/moc_main.cpp",
+  "file": "/home/michal/catkin_ws/src/build/gui_app_pkg/src/moc_main.cpp"
+},
+{
+  "directory": "/home/michal/catkin_ws/src/build/gui_app_pkg",
+  "command": "/usr/bin/g++-7  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"gui_app_pkg\\\" -I/home/michal/catkin_ws/src/build/gui_app_pkg -I/home/michal/catkin_ws/src/gui_app_pkg -I/home/michal/catkin_ws/src/build/gui_app_pkg/GuiApp_autogen/include -I/home/michal/catkin_ws/src/gui_app_pkg/include -I/home/michal/catkin_ws/src/build/devel/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++    -std=c++11 -g   -fPIC -std=gnu++11 -o CMakeFiles/GuiApp.dir/src/moc_main_window.cpp.o -c /home/michal/catkin_ws/src/build/gui_app_pkg/src/moc_main_window.cpp",
+  "file": "/home/michal/catkin_ws/src/build/gui_app_pkg/src/moc_main_window.cpp"
+},
+{
+  "directory": "/home/michal/catkin_ws/src/build/gui_app_pkg",
+  "command": "/usr/bin/g++-7  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"gui_app_pkg\\\" -I/home/michal/catkin_ws/src/build/gui_app_pkg -I/home/michal/catkin_ws/src/gui_app_pkg -I/home/michal/catkin_ws/src/build/gui_app_pkg/GuiApp_autogen/include -I/home/michal/catkin_ws/src/gui_app_pkg/include -I/home/michal/catkin_ws/src/build/devel/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++    -std=c++11 -g   -fPIC -std=gnu++11 -o CMakeFiles/GuiApp.dir/src/moc_qnode.cpp.o -c /home/michal/catkin_ws/src/build/gui_app_pkg/src/moc_qnode.cpp",
+  "file": "/home/michal/catkin_ws/src/build/gui_app_pkg/src/moc_qnode.cpp"
+},
+{
+  "directory": "/home/michal/catkin_ws/src/build/gui_app_pkg",
+  "command": "/usr/bin/g++-7  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"gui_app_pkg\\\" -I/home/michal/catkin_ws/src/build/gui_app_pkg -I/home/michal/catkin_ws/src/gui_app_pkg -I/home/michal/catkin_ws/src/build/gui_app_pkg/GuiApp_autogen/include -I/home/michal/catkin_ws/src/gui_app_pkg/include -I/home/michal/catkin_ws/src/build/devel/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++    -std=c++11 -g   -fPIC -std=gnu++11 -o CMakeFiles/GuiApp.dir/include/moc_main_window.cpp.o -c /home/michal/catkin_ws/src/build/gui_app_pkg/include/moc_main_window.cpp",
+  "file": "/home/michal/catkin_ws/src/build/gui_app_pkg/include/moc_main_window.cpp"
+},
+{
+  "directory": "/home/michal/catkin_ws/src/build/gui_app_pkg",
+  "command": "/usr/bin/g++-7  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"gui_app_pkg\\\" -I/home/michal/catkin_ws/src/build/gui_app_pkg -I/home/michal/catkin_ws/src/gui_app_pkg -I/home/michal/catkin_ws/src/build/gui_app_pkg/GuiApp_autogen/include -I/home/michal/catkin_ws/src/gui_app_pkg/include -I/home/michal/catkin_ws/src/build/devel/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++    -std=c++11 -g   -fPIC -std=gnu++11 -o CMakeFiles/GuiApp.dir/include/moc_qnode.cpp.o -c /home/michal/catkin_ws/src/build/gui_app_pkg/include/moc_qnode.cpp",
+  "file": "/home/michal/catkin_ws/src/build/gui_app_pkg/include/moc_qnode.cpp"
+},
+{
+  "directory": "/home/michal/catkin_ws/src/build/gui_app_pkg",
+  "command": "/usr/bin/g++-7  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"gui_app_pkg\\\" -I/home/michal/catkin_ws/src/build/gui_app_pkg -I/home/michal/catkin_ws/src/gui_app_pkg -I/home/michal/catkin_ws/src/build/gui_app_pkg/GuiApp_autogen/include -I/home/michal/catkin_ws/src/gui_app_pkg/include -I/home/michal/catkin_ws/src/build/devel/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++    -std=c++11 -g   -fPIC -std=gnu++11 -o CMakeFiles/GuiApp.dir/GuiApp_autogen/mocs_compilation.cpp.o -c /home/michal/catkin_ws/src/build/gui_app_pkg/GuiApp_autogen/mocs_compilation.cpp",
+  "file": "/home/michal/catkin_ws/src/build/gui_app_pkg/GuiApp_autogen/mocs_compilation.cpp"
+},
+{
+  "directory": "/home/michal/catkin_ws/src/build/safety_node_pkg",
+  "command": "/usr/bin/g++-7  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"safety_node_pkg\\\" -I/home/michal/catkin_ws/src/safety_node_pkg/include -I/home/michal/catkin_ws/src/build/devel/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g   -o CMakeFiles/SafetyNode.dir/src/SafetyNode.cpp.o -c /home/michal/catkin_ws/src/safety_node_pkg/src/SafetyNode.cpp",
+  "file": "/home/michal/catkin_ws/src/safety_node_pkg/src/SafetyNode.cpp"
+},
+{
+  "directory": "/home/michal/catkin_ws/src/build/safety_node_pkg",
+  "command": "/usr/bin/g++-7  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"safety_node_pkg\\\" -DSafetySysMethods_EXPORTS -I/home/michal/catkin_ws/src/safety_node_pkg/include -I/home/michal/catkin_ws/src/build/devel/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g -fPIC   -o CMakeFiles/SafetySysMethods.dir/src/SafetySysMethods.cpp.o -c /home/michal/catkin_ws/src/safety_node_pkg/src/SafetySysMethods.cpp",
+  "file": "/home/michal/catkin_ws/src/safety_node_pkg/src/SafetySysMethods.cpp"
+},
+{
+  "directory": "/home/michal/catkin_ws/src/build/servo_control_node_pkg",
+  "command": "/usr/bin/gcc-7 -DEthernetInterface_EXPORTS -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"servo_control_node_pkg\\\" -I/home/michal/catkin_ws/src/servo_control_node_pkg/include -I/home/michal/catkin_ws/src/build/devel/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g -fPIC   -o CMakeFiles/EthernetInterface.dir/src/EthernetInterface.c.o   -c /home/michal/catkin_ws/src/servo_control_node_pkg/src/EthernetInterface.c",
+  "file": "/home/michal/catkin_ws/src/servo_control_node_pkg/src/EthernetInterface.c"
+},
+{
+  "directory": "/home/michal/catkin_ws/src/build/servo_control_node_pkg",
+  "command": "/usr/bin/g++-7  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"servo_control_node_pkg\\\" -DServoGroupMethods_EXPORTS -I/home/michal/catkin_ws/src/servo_control_node_pkg/include -I/home/michal/catkin_ws/src/build/devel/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g -fPIC   -o CMakeFiles/ServoGroupMethods.dir/src/ServoGroupMethods.cpp.o -c /home/michal/catkin_ws/src/servo_control_node_pkg/src/ServoGroupMethods.cpp",
+  "file": "/home/michal/catkin_ws/src/servo_control_node_pkg/src/ServoGroupMethods.cpp"
+},
+{
+  "directory": "/home/michal/catkin_ws/src/build/servo_control_node_pkg",
+  "command": "/usr/bin/gcc-7 -DEthernet_EXPORTS -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"servo_control_node_pkg\\\" -I/home/michal/catkin_ws/src/servo_control_node_pkg/include -I/home/michal/catkin_ws/src/build/devel/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g -fPIC   -o CMakeFiles/Ethernet.dir/src/Ethernet.c.o   -c /home/michal/catkin_ws/src/servo_control_node_pkg/src/Ethernet.c",
+  "file": "/home/michal/catkin_ws/src/servo_control_node_pkg/src/Ethernet.c"
+},
+{
+  "directory": "/home/michal/catkin_ws/src/build/servo_control_node_pkg",
+  "command": "/usr/bin/g++-7  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"servo_control_node_pkg\\\" -DServo_EXPORTS -I/home/michal/catkin_ws/src/servo_control_node_pkg/include -I/home/michal/catkin_ws/src/build/devel/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g -fPIC   -o CMakeFiles/Servo.dir/src/Servo.cpp.o -c /home/michal/catkin_ws/src/servo_control_node_pkg/src/Servo.cpp",
+  "file": "/home/michal/catkin_ws/src/servo_control_node_pkg/src/Servo.cpp"
+},
+{
+  "directory": "/home/michal/catkin_ws/src/build/servo_control_node_pkg",
+  "command": "/usr/bin/g++-7  -DMiniPID_EXPORTS -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"servo_control_node_pkg\\\" -I/home/michal/catkin_ws/src/servo_control_node_pkg/include -I/home/michal/catkin_ws/src/build/devel/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g -fPIC   -o CMakeFiles/MiniPID.dir/src/MiniPID.cpp.o -c /home/michal/catkin_ws/src/servo_control_node_pkg/src/MiniPID.cpp",
+  "file": "/home/michal/catkin_ws/src/servo_control_node_pkg/src/MiniPID.cpp"
+},
+{
+  "directory": "/home/michal/catkin_ws/src/build/servo_control_node_pkg",
+  "command": "/usr/bin/g++-7  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"servo_control_node_pkg\\\" -I/home/michal/catkin_ws/src/servo_control_node_pkg/include -I/home/michal/catkin_ws/src/build/devel/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g   -o CMakeFiles/ServoControlNode.dir/src/ServoControlNode.cpp.o -c /home/michal/catkin_ws/src/servo_control_node_pkg/src/ServoControlNode.cpp",
+  "file": "/home/michal/catkin_ws/src/servo_control_node_pkg/src/ServoControlNode.cpp"
+}
+]

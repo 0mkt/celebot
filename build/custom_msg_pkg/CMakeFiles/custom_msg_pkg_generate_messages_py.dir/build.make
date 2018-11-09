@@ -53,22 +53,70 @@ CMAKE_BINARY_DIR = /home/michal/catkin_ws/build
 # Include the progress variables for this target.
 include custom_msg_pkg/CMakeFiles/custom_msg_pkg_generate_messages_py.dir/progress.make
 
-custom_msg_pkg/CMakeFiles/custom_msg_pkg_generate_messages_py: /home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/srv/_ChangeNodeStateServiceMsg.py
+custom_msg_pkg/CMakeFiles/custom_msg_pkg_generate_messages_py: /home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/msg/_EziServoActualMotion.py
+custom_msg_pkg/CMakeFiles/custom_msg_pkg_generate_messages_py: /home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/msg/_EziServosData.py
+custom_msg_pkg/CMakeFiles/custom_msg_pkg_generate_messages_py: /home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/msg/_EziServoData.py
+custom_msg_pkg/CMakeFiles/custom_msg_pkg_generate_messages_py: /home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/msg/_EziServoStatus.py
+custom_msg_pkg/CMakeFiles/custom_msg_pkg_generate_messages_py: /home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/srv/_ChangeNodeStateSrv.py
+custom_msg_pkg/CMakeFiles/custom_msg_pkg_generate_messages_py: /home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/msg/__init__.py
 custom_msg_pkg/CMakeFiles/custom_msg_pkg_generate_messages_py: /home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/srv/__init__.py
 
 
-/home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/srv/_ChangeNodeStateServiceMsg.py: /opt/ros/melodic/lib/genpy/gensrv_py.py
-/home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/srv/_ChangeNodeStateServiceMsg.py: /home/michal/catkin_ws/src/custom_msg_pkg/srv/ChangeNodeStateServiceMsg.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/michal/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code from SRV custom_msg_pkg/ChangeNodeStateServiceMsg"
-	cd /home/michal/catkin_ws/build/custom_msg_pkg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/michal/catkin_ws/src/custom_msg_pkg/srv/ChangeNodeStateServiceMsg.srv -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p custom_msg_pkg -o /home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/srv
+/home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/msg/_EziServoActualMotion.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
+/home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/msg/_EziServoActualMotion.py: /home/michal/catkin_ws/src/custom_msg_pkg/msg/EziServoActualMotion.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/michal/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG custom_msg_pkg/EziServoActualMotion"
+	cd /home/michal/catkin_ws/build/custom_msg_pkg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/michal/catkin_ws/src/custom_msg_pkg/msg/EziServoActualMotion.msg -Icustom_msg_pkg:/home/michal/catkin_ws/src/custom_msg_pkg/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p custom_msg_pkg -o /home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/msg
+
+/home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/msg/_EziServosData.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
+/home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/msg/_EziServosData.py: /home/michal/catkin_ws/src/custom_msg_pkg/msg/EziServosData.msg
+/home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/msg/_EziServosData.py: /home/michal/catkin_ws/src/custom_msg_pkg/msg/EziServoData.msg
+/home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/msg/_EziServosData.py: /home/michal/catkin_ws/src/custom_msg_pkg/msg/EziServoStatus.msg
+/home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/msg/_EziServosData.py: /home/michal/catkin_ws/src/custom_msg_pkg/msg/EziServoActualMotion.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/michal/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python from MSG custom_msg_pkg/EziServosData"
+	cd /home/michal/catkin_ws/build/custom_msg_pkg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/michal/catkin_ws/src/custom_msg_pkg/msg/EziServosData.msg -Icustom_msg_pkg:/home/michal/catkin_ws/src/custom_msg_pkg/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p custom_msg_pkg -o /home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/msg
+
+/home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/msg/_EziServoData.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
+/home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/msg/_EziServoData.py: /home/michal/catkin_ws/src/custom_msg_pkg/msg/EziServoData.msg
+/home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/msg/_EziServoData.py: /home/michal/catkin_ws/src/custom_msg_pkg/msg/EziServoStatus.msg
+/home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/msg/_EziServoData.py: /home/michal/catkin_ws/src/custom_msg_pkg/msg/EziServoActualMotion.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/michal/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python from MSG custom_msg_pkg/EziServoData"
+	cd /home/michal/catkin_ws/build/custom_msg_pkg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/michal/catkin_ws/src/custom_msg_pkg/msg/EziServoData.msg -Icustom_msg_pkg:/home/michal/catkin_ws/src/custom_msg_pkg/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p custom_msg_pkg -o /home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/msg
+
+/home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/msg/_EziServoStatus.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
+/home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/msg/_EziServoStatus.py: /home/michal/catkin_ws/src/custom_msg_pkg/msg/EziServoStatus.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/michal/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python from MSG custom_msg_pkg/EziServoStatus"
+	cd /home/michal/catkin_ws/build/custom_msg_pkg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/michal/catkin_ws/src/custom_msg_pkg/msg/EziServoStatus.msg -Icustom_msg_pkg:/home/michal/catkin_ws/src/custom_msg_pkg/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p custom_msg_pkg -o /home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/msg
+
+/home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/srv/_ChangeNodeStateSrv.py: /opt/ros/melodic/lib/genpy/gensrv_py.py
+/home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/srv/_ChangeNodeStateSrv.py: /home/michal/catkin_ws/src/custom_msg_pkg/srv/ChangeNodeStateSrv.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/michal/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Python code from SRV custom_msg_pkg/ChangeNodeStateSrv"
+	cd /home/michal/catkin_ws/build/custom_msg_pkg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/michal/catkin_ws/src/custom_msg_pkg/srv/ChangeNodeStateSrv.srv -Icustom_msg_pkg:/home/michal/catkin_ws/src/custom_msg_pkg/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p custom_msg_pkg -o /home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/srv
+
+/home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/msg/__init__.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
+/home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/msg/__init__.py: /home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/msg/_EziServoActualMotion.py
+/home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/msg/__init__.py: /home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/msg/_EziServosData.py
+/home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/msg/__init__.py: /home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/msg/_EziServoData.py
+/home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/msg/__init__.py: /home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/msg/_EziServoStatus.py
+/home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/msg/__init__.py: /home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/srv/_ChangeNodeStateSrv.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/michal/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Python msg __init__.py for custom_msg_pkg"
+	cd /home/michal/catkin_ws/build/custom_msg_pkg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/msg --initpy
 
 /home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/srv/__init__.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
-/home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/srv/__init__.py: /home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/srv/_ChangeNodeStateServiceMsg.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/michal/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python srv __init__.py for custom_msg_pkg"
+/home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/srv/__init__.py: /home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/msg/_EziServoActualMotion.py
+/home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/srv/__init__.py: /home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/msg/_EziServosData.py
+/home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/srv/__init__.py: /home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/msg/_EziServoData.py
+/home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/srv/__init__.py: /home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/msg/_EziServoStatus.py
+/home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/srv/__init__.py: /home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/srv/_ChangeNodeStateSrv.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/michal/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Python srv __init__.py for custom_msg_pkg"
 	cd /home/michal/catkin_ws/build/custom_msg_pkg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/srv --initpy
 
 custom_msg_pkg_generate_messages_py: custom_msg_pkg/CMakeFiles/custom_msg_pkg_generate_messages_py
-custom_msg_pkg_generate_messages_py: /home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/srv/_ChangeNodeStateServiceMsg.py
+custom_msg_pkg_generate_messages_py: /home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/msg/_EziServoActualMotion.py
+custom_msg_pkg_generate_messages_py: /home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/msg/_EziServosData.py
+custom_msg_pkg_generate_messages_py: /home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/msg/_EziServoData.py
+custom_msg_pkg_generate_messages_py: /home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/msg/_EziServoStatus.py
+custom_msg_pkg_generate_messages_py: /home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/srv/_ChangeNodeStateSrv.py
+custom_msg_pkg_generate_messages_py: /home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/msg/__init__.py
 custom_msg_pkg_generate_messages_py: /home/michal/catkin_ws/devel/lib/python2.7/dist-packages/custom_msg_pkg/srv/__init__.py
 custom_msg_pkg_generate_messages_py: custom_msg_pkg/CMakeFiles/custom_msg_pkg_generate_messages_py.dir/build.make
 

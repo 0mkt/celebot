@@ -1,0 +1,1 @@
+/usr/bin/gcc-7 -fPIC -g  -shared -Wl,-soname,libEthernet.so -o ../devel/lib/libEthernet.so CMakeFiles/Ethernet.dir/src/Ethernet.c.o 

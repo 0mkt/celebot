@@ -53,16 +53,49 @@ CMAKE_BINARY_DIR = /home/michal/catkin_ws/build
 # Include the progress variables for this target.
 include custom_msg_pkg/CMakeFiles/custom_msg_pkg_generate_messages_nodejs.dir/progress.make
 
-custom_msg_pkg/CMakeFiles/custom_msg_pkg_generate_messages_nodejs: /home/michal/catkin_ws/devel/share/gennodejs/ros/custom_msg_pkg/srv/ChangeNodeStateServiceMsg.js
+custom_msg_pkg/CMakeFiles/custom_msg_pkg_generate_messages_nodejs: /home/michal/catkin_ws/devel/share/gennodejs/ros/custom_msg_pkg/msg/EziServoActualMotion.js
+custom_msg_pkg/CMakeFiles/custom_msg_pkg_generate_messages_nodejs: /home/michal/catkin_ws/devel/share/gennodejs/ros/custom_msg_pkg/msg/EziServosData.js
+custom_msg_pkg/CMakeFiles/custom_msg_pkg_generate_messages_nodejs: /home/michal/catkin_ws/devel/share/gennodejs/ros/custom_msg_pkg/msg/EziServoData.js
+custom_msg_pkg/CMakeFiles/custom_msg_pkg_generate_messages_nodejs: /home/michal/catkin_ws/devel/share/gennodejs/ros/custom_msg_pkg/msg/EziServoStatus.js
+custom_msg_pkg/CMakeFiles/custom_msg_pkg_generate_messages_nodejs: /home/michal/catkin_ws/devel/share/gennodejs/ros/custom_msg_pkg/srv/ChangeNodeStateSrv.js
 
 
-/home/michal/catkin_ws/devel/share/gennodejs/ros/custom_msg_pkg/srv/ChangeNodeStateServiceMsg.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
-/home/michal/catkin_ws/devel/share/gennodejs/ros/custom_msg_pkg/srv/ChangeNodeStateServiceMsg.js: /home/michal/catkin_ws/src/custom_msg_pkg/srv/ChangeNodeStateServiceMsg.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/michal/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from custom_msg_pkg/ChangeNodeStateServiceMsg.srv"
-	cd /home/michal/catkin_ws/build/custom_msg_pkg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/michal/catkin_ws/src/custom_msg_pkg/srv/ChangeNodeStateServiceMsg.srv -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p custom_msg_pkg -o /home/michal/catkin_ws/devel/share/gennodejs/ros/custom_msg_pkg/srv
+/home/michal/catkin_ws/devel/share/gennodejs/ros/custom_msg_pkg/msg/EziServoActualMotion.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+/home/michal/catkin_ws/devel/share/gennodejs/ros/custom_msg_pkg/msg/EziServoActualMotion.js: /home/michal/catkin_ws/src/custom_msg_pkg/msg/EziServoActualMotion.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/michal/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from custom_msg_pkg/EziServoActualMotion.msg"
+	cd /home/michal/catkin_ws/build/custom_msg_pkg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/michal/catkin_ws/src/custom_msg_pkg/msg/EziServoActualMotion.msg -Icustom_msg_pkg:/home/michal/catkin_ws/src/custom_msg_pkg/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p custom_msg_pkg -o /home/michal/catkin_ws/devel/share/gennodejs/ros/custom_msg_pkg/msg
+
+/home/michal/catkin_ws/devel/share/gennodejs/ros/custom_msg_pkg/msg/EziServosData.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+/home/michal/catkin_ws/devel/share/gennodejs/ros/custom_msg_pkg/msg/EziServosData.js: /home/michal/catkin_ws/src/custom_msg_pkg/msg/EziServosData.msg
+/home/michal/catkin_ws/devel/share/gennodejs/ros/custom_msg_pkg/msg/EziServosData.js: /home/michal/catkin_ws/src/custom_msg_pkg/msg/EziServoData.msg
+/home/michal/catkin_ws/devel/share/gennodejs/ros/custom_msg_pkg/msg/EziServosData.js: /home/michal/catkin_ws/src/custom_msg_pkg/msg/EziServoStatus.msg
+/home/michal/catkin_ws/devel/share/gennodejs/ros/custom_msg_pkg/msg/EziServosData.js: /home/michal/catkin_ws/src/custom_msg_pkg/msg/EziServoActualMotion.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/michal/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from custom_msg_pkg/EziServosData.msg"
+	cd /home/michal/catkin_ws/build/custom_msg_pkg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/michal/catkin_ws/src/custom_msg_pkg/msg/EziServosData.msg -Icustom_msg_pkg:/home/michal/catkin_ws/src/custom_msg_pkg/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p custom_msg_pkg -o /home/michal/catkin_ws/devel/share/gennodejs/ros/custom_msg_pkg/msg
+
+/home/michal/catkin_ws/devel/share/gennodejs/ros/custom_msg_pkg/msg/EziServoData.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+/home/michal/catkin_ws/devel/share/gennodejs/ros/custom_msg_pkg/msg/EziServoData.js: /home/michal/catkin_ws/src/custom_msg_pkg/msg/EziServoData.msg
+/home/michal/catkin_ws/devel/share/gennodejs/ros/custom_msg_pkg/msg/EziServoData.js: /home/michal/catkin_ws/src/custom_msg_pkg/msg/EziServoStatus.msg
+/home/michal/catkin_ws/devel/share/gennodejs/ros/custom_msg_pkg/msg/EziServoData.js: /home/michal/catkin_ws/src/custom_msg_pkg/msg/EziServoActualMotion.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/michal/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Javascript code from custom_msg_pkg/EziServoData.msg"
+	cd /home/michal/catkin_ws/build/custom_msg_pkg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/michal/catkin_ws/src/custom_msg_pkg/msg/EziServoData.msg -Icustom_msg_pkg:/home/michal/catkin_ws/src/custom_msg_pkg/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p custom_msg_pkg -o /home/michal/catkin_ws/devel/share/gennodejs/ros/custom_msg_pkg/msg
+
+/home/michal/catkin_ws/devel/share/gennodejs/ros/custom_msg_pkg/msg/EziServoStatus.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+/home/michal/catkin_ws/devel/share/gennodejs/ros/custom_msg_pkg/msg/EziServoStatus.js: /home/michal/catkin_ws/src/custom_msg_pkg/msg/EziServoStatus.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/michal/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Javascript code from custom_msg_pkg/EziServoStatus.msg"
+	cd /home/michal/catkin_ws/build/custom_msg_pkg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/michal/catkin_ws/src/custom_msg_pkg/msg/EziServoStatus.msg -Icustom_msg_pkg:/home/michal/catkin_ws/src/custom_msg_pkg/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p custom_msg_pkg -o /home/michal/catkin_ws/devel/share/gennodejs/ros/custom_msg_pkg/msg
+
+/home/michal/catkin_ws/devel/share/gennodejs/ros/custom_msg_pkg/srv/ChangeNodeStateSrv.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+/home/michal/catkin_ws/devel/share/gennodejs/ros/custom_msg_pkg/srv/ChangeNodeStateSrv.js: /home/michal/catkin_ws/src/custom_msg_pkg/srv/ChangeNodeStateSrv.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/michal/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Javascript code from custom_msg_pkg/ChangeNodeStateSrv.srv"
+	cd /home/michal/catkin_ws/build/custom_msg_pkg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/michal/catkin_ws/src/custom_msg_pkg/srv/ChangeNodeStateSrv.srv -Icustom_msg_pkg:/home/michal/catkin_ws/src/custom_msg_pkg/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p custom_msg_pkg -o /home/michal/catkin_ws/devel/share/gennodejs/ros/custom_msg_pkg/srv
 
 custom_msg_pkg_generate_messages_nodejs: custom_msg_pkg/CMakeFiles/custom_msg_pkg_generate_messages_nodejs
-custom_msg_pkg_generate_messages_nodejs: /home/michal/catkin_ws/devel/share/gennodejs/ros/custom_msg_pkg/srv/ChangeNodeStateServiceMsg.js
+custom_msg_pkg_generate_messages_nodejs: /home/michal/catkin_ws/devel/share/gennodejs/ros/custom_msg_pkg/msg/EziServoActualMotion.js
+custom_msg_pkg_generate_messages_nodejs: /home/michal/catkin_ws/devel/share/gennodejs/ros/custom_msg_pkg/msg/EziServosData.js
+custom_msg_pkg_generate_messages_nodejs: /home/michal/catkin_ws/devel/share/gennodejs/ros/custom_msg_pkg/msg/EziServoData.js
+custom_msg_pkg_generate_messages_nodejs: /home/michal/catkin_ws/devel/share/gennodejs/ros/custom_msg_pkg/msg/EziServoStatus.js
+custom_msg_pkg_generate_messages_nodejs: /home/michal/catkin_ws/devel/share/gennodejs/ros/custom_msg_pkg/srv/ChangeNodeStateSrv.js
 custom_msg_pkg_generate_messages_nodejs: custom_msg_pkg/CMakeFiles/custom_msg_pkg_generate_messages_nodejs.dir/build.make
 
 .PHONY : custom_msg_pkg_generate_messages_nodejs

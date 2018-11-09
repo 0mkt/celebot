@@ -53,21 +53,54 @@ CMAKE_BINARY_DIR = /home/michal/catkin_ws/build
 # Include the progress variables for this target.
 include custom_msg_pkg/CMakeFiles/custom_msg_pkg_generate_messages_eus.dir/progress.make
 
-custom_msg_pkg/CMakeFiles/custom_msg_pkg_generate_messages_eus: /home/michal/catkin_ws/devel/share/roseus/ros/custom_msg_pkg/srv/ChangeNodeStateServiceMsg.l
+custom_msg_pkg/CMakeFiles/custom_msg_pkg_generate_messages_eus: /home/michal/catkin_ws/devel/share/roseus/ros/custom_msg_pkg/msg/EziServoActualMotion.l
+custom_msg_pkg/CMakeFiles/custom_msg_pkg_generate_messages_eus: /home/michal/catkin_ws/devel/share/roseus/ros/custom_msg_pkg/msg/EziServosData.l
+custom_msg_pkg/CMakeFiles/custom_msg_pkg_generate_messages_eus: /home/michal/catkin_ws/devel/share/roseus/ros/custom_msg_pkg/msg/EziServoData.l
+custom_msg_pkg/CMakeFiles/custom_msg_pkg_generate_messages_eus: /home/michal/catkin_ws/devel/share/roseus/ros/custom_msg_pkg/msg/EziServoStatus.l
+custom_msg_pkg/CMakeFiles/custom_msg_pkg_generate_messages_eus: /home/michal/catkin_ws/devel/share/roseus/ros/custom_msg_pkg/srv/ChangeNodeStateSrv.l
 custom_msg_pkg/CMakeFiles/custom_msg_pkg_generate_messages_eus: /home/michal/catkin_ws/devel/share/roseus/ros/custom_msg_pkg/manifest.l
 
 
-/home/michal/catkin_ws/devel/share/roseus/ros/custom_msg_pkg/srv/ChangeNodeStateServiceMsg.l: /opt/ros/melodic/lib/geneus/gen_eus.py
-/home/michal/catkin_ws/devel/share/roseus/ros/custom_msg_pkg/srv/ChangeNodeStateServiceMsg.l: /home/michal/catkin_ws/src/custom_msg_pkg/srv/ChangeNodeStateServiceMsg.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/michal/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from custom_msg_pkg/ChangeNodeStateServiceMsg.srv"
-	cd /home/michal/catkin_ws/build/custom_msg_pkg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/michal/catkin_ws/src/custom_msg_pkg/srv/ChangeNodeStateServiceMsg.srv -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p custom_msg_pkg -o /home/michal/catkin_ws/devel/share/roseus/ros/custom_msg_pkg/srv
+/home/michal/catkin_ws/devel/share/roseus/ros/custom_msg_pkg/msg/EziServoActualMotion.l: /opt/ros/melodic/lib/geneus/gen_eus.py
+/home/michal/catkin_ws/devel/share/roseus/ros/custom_msg_pkg/msg/EziServoActualMotion.l: /home/michal/catkin_ws/src/custom_msg_pkg/msg/EziServoActualMotion.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/michal/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from custom_msg_pkg/EziServoActualMotion.msg"
+	cd /home/michal/catkin_ws/build/custom_msg_pkg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/michal/catkin_ws/src/custom_msg_pkg/msg/EziServoActualMotion.msg -Icustom_msg_pkg:/home/michal/catkin_ws/src/custom_msg_pkg/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p custom_msg_pkg -o /home/michal/catkin_ws/devel/share/roseus/ros/custom_msg_pkg/msg
+
+/home/michal/catkin_ws/devel/share/roseus/ros/custom_msg_pkg/msg/EziServosData.l: /opt/ros/melodic/lib/geneus/gen_eus.py
+/home/michal/catkin_ws/devel/share/roseus/ros/custom_msg_pkg/msg/EziServosData.l: /home/michal/catkin_ws/src/custom_msg_pkg/msg/EziServosData.msg
+/home/michal/catkin_ws/devel/share/roseus/ros/custom_msg_pkg/msg/EziServosData.l: /home/michal/catkin_ws/src/custom_msg_pkg/msg/EziServoData.msg
+/home/michal/catkin_ws/devel/share/roseus/ros/custom_msg_pkg/msg/EziServosData.l: /home/michal/catkin_ws/src/custom_msg_pkg/msg/EziServoStatus.msg
+/home/michal/catkin_ws/devel/share/roseus/ros/custom_msg_pkg/msg/EziServosData.l: /home/michal/catkin_ws/src/custom_msg_pkg/msg/EziServoActualMotion.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/michal/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from custom_msg_pkg/EziServosData.msg"
+	cd /home/michal/catkin_ws/build/custom_msg_pkg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/michal/catkin_ws/src/custom_msg_pkg/msg/EziServosData.msg -Icustom_msg_pkg:/home/michal/catkin_ws/src/custom_msg_pkg/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p custom_msg_pkg -o /home/michal/catkin_ws/devel/share/roseus/ros/custom_msg_pkg/msg
+
+/home/michal/catkin_ws/devel/share/roseus/ros/custom_msg_pkg/msg/EziServoData.l: /opt/ros/melodic/lib/geneus/gen_eus.py
+/home/michal/catkin_ws/devel/share/roseus/ros/custom_msg_pkg/msg/EziServoData.l: /home/michal/catkin_ws/src/custom_msg_pkg/msg/EziServoData.msg
+/home/michal/catkin_ws/devel/share/roseus/ros/custom_msg_pkg/msg/EziServoData.l: /home/michal/catkin_ws/src/custom_msg_pkg/msg/EziServoStatus.msg
+/home/michal/catkin_ws/devel/share/roseus/ros/custom_msg_pkg/msg/EziServoData.l: /home/michal/catkin_ws/src/custom_msg_pkg/msg/EziServoActualMotion.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/michal/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp code from custom_msg_pkg/EziServoData.msg"
+	cd /home/michal/catkin_ws/build/custom_msg_pkg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/michal/catkin_ws/src/custom_msg_pkg/msg/EziServoData.msg -Icustom_msg_pkg:/home/michal/catkin_ws/src/custom_msg_pkg/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p custom_msg_pkg -o /home/michal/catkin_ws/devel/share/roseus/ros/custom_msg_pkg/msg
+
+/home/michal/catkin_ws/devel/share/roseus/ros/custom_msg_pkg/msg/EziServoStatus.l: /opt/ros/melodic/lib/geneus/gen_eus.py
+/home/michal/catkin_ws/devel/share/roseus/ros/custom_msg_pkg/msg/EziServoStatus.l: /home/michal/catkin_ws/src/custom_msg_pkg/msg/EziServoStatus.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/michal/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating EusLisp code from custom_msg_pkg/EziServoStatus.msg"
+	cd /home/michal/catkin_ws/build/custom_msg_pkg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/michal/catkin_ws/src/custom_msg_pkg/msg/EziServoStatus.msg -Icustom_msg_pkg:/home/michal/catkin_ws/src/custom_msg_pkg/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p custom_msg_pkg -o /home/michal/catkin_ws/devel/share/roseus/ros/custom_msg_pkg/msg
+
+/home/michal/catkin_ws/devel/share/roseus/ros/custom_msg_pkg/srv/ChangeNodeStateSrv.l: /opt/ros/melodic/lib/geneus/gen_eus.py
+/home/michal/catkin_ws/devel/share/roseus/ros/custom_msg_pkg/srv/ChangeNodeStateSrv.l: /home/michal/catkin_ws/src/custom_msg_pkg/srv/ChangeNodeStateSrv.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/michal/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating EusLisp code from custom_msg_pkg/ChangeNodeStateSrv.srv"
+	cd /home/michal/catkin_ws/build/custom_msg_pkg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/michal/catkin_ws/src/custom_msg_pkg/srv/ChangeNodeStateSrv.srv -Icustom_msg_pkg:/home/michal/catkin_ws/src/custom_msg_pkg/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p custom_msg_pkg -o /home/michal/catkin_ws/devel/share/roseus/ros/custom_msg_pkg/srv
 
 /home/michal/catkin_ws/devel/share/roseus/ros/custom_msg_pkg/manifest.l: /opt/ros/melodic/lib/geneus/gen_eus.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/michal/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp manifest code for custom_msg_pkg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/michal/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating EusLisp manifest code for custom_msg_pkg"
 	cd /home/michal/catkin_ws/build/custom_msg_pkg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/michal/catkin_ws/devel/share/roseus/ros/custom_msg_pkg custom_msg_pkg std_msgs
 
 custom_msg_pkg_generate_messages_eus: custom_msg_pkg/CMakeFiles/custom_msg_pkg_generate_messages_eus
-custom_msg_pkg_generate_messages_eus: /home/michal/catkin_ws/devel/share/roseus/ros/custom_msg_pkg/srv/ChangeNodeStateServiceMsg.l
+custom_msg_pkg_generate_messages_eus: /home/michal/catkin_ws/devel/share/roseus/ros/custom_msg_pkg/msg/EziServoActualMotion.l
+custom_msg_pkg_generate_messages_eus: /home/michal/catkin_ws/devel/share/roseus/ros/custom_msg_pkg/msg/EziServosData.l
+custom_msg_pkg_generate_messages_eus: /home/michal/catkin_ws/devel/share/roseus/ros/custom_msg_pkg/msg/EziServoData.l
+custom_msg_pkg_generate_messages_eus: /home/michal/catkin_ws/devel/share/roseus/ros/custom_msg_pkg/msg/EziServoStatus.l
+custom_msg_pkg_generate_messages_eus: /home/michal/catkin_ws/devel/share/roseus/ros/custom_msg_pkg/srv/ChangeNodeStateSrv.l
 custom_msg_pkg_generate_messages_eus: /home/michal/catkin_ws/devel/share/roseus/ros/custom_msg_pkg/manifest.l
 custom_msg_pkg_generate_messages_eus: custom_msg_pkg/CMakeFiles/custom_msg_pkg_generate_messages_eus.dir/build.make
 

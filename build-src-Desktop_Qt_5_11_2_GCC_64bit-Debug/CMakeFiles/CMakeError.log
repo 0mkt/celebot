@@ -1,0 +1,110 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/michal/catkin_ws/build-src-Desktop_Qt_5_11_2_GCC_64bit-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_bbeb5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_bbeb5.dir/build.make CMakeFiles/cmTC_bbeb5.dir/build
+make[1]: Entering directory '/home/michal/catkin_ws/build-src-Desktop_Qt_5_11_2_GCC_64bit-Debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bbeb5.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_bbeb5.dir/CheckSymbolExists.c.o   -c /home/michal/catkin_ws/build-src-Desktop_Qt_5_11_2_GCC_64bit-Debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_bbeb5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bbeb5.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_bbeb5.dir/CheckSymbolExists.c.o  -o cmTC_bbeb5 
+CMakeFiles/cmTC_bbeb5.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_bbeb5.dir/build.make:97: recipe for target 'cmTC_bbeb5' failed
+make[1]: *** [cmTC_bbeb5] Error 1
+make[1]: Leaving directory '/home/michal/catkin_ws/build-src-Desktop_Qt_5_11_2_GCC_64bit-Debug/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_bbeb5/fast' failed
+make: *** [cmTC_bbeb5/fast] Error 2
+
+File /home/michal/catkin_ws/build-src-Desktop_Qt_5_11_2_GCC_64bit-Debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/michal/catkin_ws/build-src-Desktop_Qt_5_11_2_GCC_64bit-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_84f8f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_84f8f.dir/build.make CMakeFiles/cmTC_84f8f.dir/build
+make[1]: Entering directory '/home/michal/catkin_ws/build-src-Desktop_Qt_5_11_2_GCC_64bit-Debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_84f8f.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_84f8f.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_84f8f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_84f8f.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_84f8f.dir/CheckFunctionExists.c.o  -o cmTC_84f8f -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_84f8f.dir/build.make:97: recipe for target 'cmTC_84f8f' failed
+make[1]: *** [cmTC_84f8f] Error 1
+make[1]: Leaving directory '/home/michal/catkin_ws/build-src-Desktop_Qt_5_11_2_GCC_64bit-Debug/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_84f8f/fast' failed
+make: *** [cmTC_84f8f/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/michal/catkin_ws/build-src-Desktop_Qt_5_11_2_GCC_64bit-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_60041/fast"
+/usr/bin/make -f CMakeFiles/cmTC_60041.dir/build.make CMakeFiles/cmTC_60041.dir/build
+make[1]: Entering directory '/home/michal/catkin_ws/build-src-Desktop_Qt_5_11_2_GCC_64bit-Debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_60041.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_60041.dir/CheckSymbolExists.c.o   -c /home/michal/catkin_ws/build-src-Desktop_Qt_5_11_2_GCC_64bit-Debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_60041
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_60041.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_60041.dir/CheckSymbolExists.c.o  -o cmTC_60041 
+CMakeFiles/cmTC_60041.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_60041.dir/build.make:97: recipe for target 'cmTC_60041' failed
+make[1]: *** [cmTC_60041] Error 1
+make[1]: Leaving directory '/home/michal/catkin_ws/build-src-Desktop_Qt_5_11_2_GCC_64bit-Debug/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_60041/fast' failed
+make: *** [cmTC_60041/fast] Error 2
+
+File /home/michal/catkin_ws/build-src-Desktop_Qt_5_11_2_GCC_64bit-Debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/michal/catkin_ws/build-src-Desktop_Qt_5_11_2_GCC_64bit-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c8729/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c8729.dir/build.make CMakeFiles/cmTC_c8729.dir/build
+make[1]: Entering directory '/home/michal/catkin_ws/build-src-Desktop_Qt_5_11_2_GCC_64bit-Debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c8729.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_c8729.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_c8729
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c8729.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_c8729.dir/CheckFunctionExists.c.o  -o cmTC_c8729 -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_c8729.dir/build.make:97: recipe for target 'cmTC_c8729' failed
+make[1]: *** [cmTC_c8729] Error 1
+make[1]: Leaving directory '/home/michal/catkin_ws/build-src-Desktop_Qt_5_11_2_GCC_64bit-Debug/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_c8729/fast' failed
+make: *** [cmTC_c8729/fast] Error 2
+
+

@@ -1,0 +1,4 @@
+string ipAddress
+EziServoStatus status
+EziServoActualMotion actualMotion
+

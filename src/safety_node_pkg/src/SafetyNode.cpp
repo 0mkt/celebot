@@ -15,8 +15,8 @@ bool ReadNodesConfig(ros::NodeHandle nh){
 //------------------------------------------------------------------------------
 //				       --> ROS CALLBACKS <--
 //------------------------------------------------------------------------------
-bool ChangeNodeStateServiceCallback(custom_msg_pkg::ChangeNodeStateServiceMsg::Request &req,
-                 custom_msg_pkg::ChangeNodeStateServiceMsg::Response &res)
+bool ChangeNodeStateServiceCallback(custom_msg_pkg::ChangeNodeStateSrv::Request &req,
+                 custom_msg_pkg::ChangeNodeStateSrv::Response &res)
 {  
     ROS_INFO("ChangeNodeStateServiceCallback has been called"); 
     ROS_INFO("Request Data==> targetState=%d, callerId=%d", req.targetState, req.callerId);
@@ -42,7 +42,7 @@ bool ChangeNodeStateServiceCallback(custom_msg_pkg::ChangeNodeStateServiceMsg::R
 
 bool ValidateChangeStateRequest(int targetState, int callerId){
 
-    if (callerId != mainNodeId) return false;
+    //if (callerId != mainNodeId) return false;
     if (_programState == BREACH && targetState != DISARMED) return false;
     if (_programState == FAILURE && targetState != INITIALIZATION) return false;
 
@@ -156,6 +156,7 @@ int main(int argc, char** argv) {
 
     ros::init(argc, argv, "safety_node");
     ros::NodeHandle nh;
+    ros::Rate loop_rate(100);
 
     if (!ReadNodesConfig(nh)) {
         ROS_ERROR("Cannot read configuration from parameter server!");
@@ -206,7 +207,7 @@ int main(int argc, char** argv) {
 
         pub.publish(msg);
         ros::spinOnce();
-        usleep(10000);
+        loop_rate.sleep();
     }
     
     usleep(5000000);

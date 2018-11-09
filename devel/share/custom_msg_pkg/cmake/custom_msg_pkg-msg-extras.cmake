@@ -1,2 +1,2 @@
-set(custom_msg_pkg_MESSAGE_FILES "")
-set(custom_msg_pkg_SERVICE_FILES "/home/michal/catkin_ws/src/custom_msg_pkg/srv/ChangeNodeStateServiceMsg.srv")
+set(custom_msg_pkg_MESSAGE_FILES "/home/michal/catkin_ws/src/custom_msg_pkg/msg/EziServoActualMotion.msg;/home/michal/catkin_ws/src/custom_msg_pkg/msg/EziServoStatus.msg;/home/michal/catkin_ws/src/custom_msg_pkg/msg/EziServoData.msg;/home/michal/catkin_ws/src/custom_msg_pkg/msg/EziServosData.msg")
+set(custom_msg_pkg_SERVICE_FILES "/home/michal/catkin_ws/src/custom_msg_pkg/srv/ChangeNodeStateSrv.srv")

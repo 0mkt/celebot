@@ -3,14 +3,18 @@
 ##############################################################################
 
 cmake_minimum_required(VERSION 2.8.0)
-project(qtros)
+project(gui_app_pkg)
+
+set(CMAKE_BUILD_TYPE Debug)
 
 ##############################################################################
 # Catkin
 ##############################################################################
 
 # qt_build provides the qt cmake glue, roscpp the comms for a default talker
-find_package(catkin REQUIRED COMPONENTS roscpp)
+find_package(catkin REQUIRED COMPONENTS 
+roscpp
+custom_msg_pkg)
 find_package(Qt5Widgets REQUIRED)
 
 include_directories(
@@ -18,7 +22,7 @@ include_directories(
         ${catkin_INCLUDE_DIRS})
 
 set(CPP_SOURCES src/main.cpp src/main_window.cpp src/qnode.cpp)
-set(CPP_HEADERS include/qtros/main_window.hpp include/qtros/qnode.hpp)
+set(CPP_HEADERS include/main_window.hpp include/qnode.hpp)
 set(QRC_RESOURCES resources/images.qrc)
 
 set(CMAKE_AUTOMOC ON)
@@ -79,7 +83,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${Qt5Widgets_EXECUTABLE_COMPILE_FLAGS} -
 #target_link_libraries(qtros ${QT_LIBRARIES} Qt5::Widgets ${catkin_LIBRARIES})
 #install(TARGETS qtros RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
 
-add_executable(qtros ${CPP_SOURCES} ${UIS_HEADERS} ${MOC_SOURCES} ${QRC_RESOURCES} ${RESOURCES_RCC})
-target_link_libraries(qtros ${Qt5Widgets_LIBRARIES} ${catkin_LIBRARIES})
+add_executable(GuiApp ${CPP_SOURCES} ${UIS_HEADERS} ${MOC_SOURCES} ${QRC_RESOURCES} ${RESOURCES_RCC})
+target_link_libraries(GuiApp ${Qt5Widgets_LIBRARIES} ${catkin_LIBRARIES})
 
-qt5_use_modules(qtros Widgets)
+qt5_use_modules(GuiApp Widgets)

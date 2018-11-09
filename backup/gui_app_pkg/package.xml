@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package>
+  <name>gui_app_pkg</name>
+  <version>0.1.0</version>
+  <description>
+
+     Gui Application for robot system
+
+  </description>
+  <maintainer email="mkt@celestial.pl">mkt</maintainer>
+  <author>mkt</author>
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>qt_build</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>libqt5-dev</build_depend>
+  <run_depend>qt_build</run_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>libqt5-dev</run_depend>
+
+ 
+</package>

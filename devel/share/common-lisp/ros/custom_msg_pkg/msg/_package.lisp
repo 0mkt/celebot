@@ -1,0 +1,13 @@
+(cl:defpackage custom_msg_pkg-msg
+  (:use )
+  (:export
+   "<EZISERVOACTUALMOTION>"
+   "EZISERVOACTUALMOTION"
+   "<EZISERVODATA>"
+   "EZISERVODATA"
+   "<EZISERVOSTATUS>"
+   "EZISERVOSTATUS"
+   "<EZISERVOSDATA>"
+   "EZISERVOSDATA"
+  ))
+

@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: main_node_pkg
+Description: Description of main_node_pkg
+Version: 0.0.0
+Cflags: 
+Libs: -L/usr/local/lib 
+Requires: 

@@ -123,9 +123,10 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/michal/catkin_ws/build/gtest/cmake_install.cmake")
   include("/home/michal/catkin_ws/build/custom_msg_pkg/cmake_install.cmake")
+  include("/home/michal/catkin_ws/build/gui_app_pkg/cmake_install.cmake")
   include("/home/michal/catkin_ws/build/main_node_pkg/cmake_install.cmake")
   include("/home/michal/catkin_ws/build/safety_node_pkg/cmake_install.cmake")
-  include("/home/michal/catkin_ws/build/servo_control_pkg/cmake_install.cmake")
+  include("/home/michal/catkin_ws/build/servo_control_node_pkg/cmake_install.cmake")
 
 endif()
 
